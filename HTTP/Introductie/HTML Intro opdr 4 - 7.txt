@@ -1,0 +1,18 @@
+4. HTML gebruikt basis tags om structuur op te bouwen. De <html>, <head> en <body>.
+Geef voor elke element aan waarvoor het dient.
+
+Het <html>-element  representeert de 'root' (het element op het hoogste niveau) van een HTML-document. Er wordt daarom naar verwezen als het root-element. 
+Alle andere elementen moeten nakomelingen zijn van dit element.
+
+Het <head>element is een container voor metadata (data over data) en wordt tussen de <html> tag en de <body> tag geplaatst.
+
+De <body>tag definieert de hoofdtekst van het document.
+
+Het <body>element bevat alle inhoud van een HTML-document, zoals koppen, alinea's, afbeeldingen, hyperlinks, tabellen, lijsten, enz.
+
+Opmerking: er kan maar één <body> element in een HTML-document staan.
+
+5. Op HTML elementen kun je attributen gebruiken. Wat zijn HTML attributen ? Geef
+minimaal 5 attributen en maak voorbeelden waar je de attributen in toepast.
+
+

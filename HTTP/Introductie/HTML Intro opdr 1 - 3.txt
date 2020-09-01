@@ -1,0 +1,54 @@
+1. Wat is het verschil tussen het internet en het world wide web?
+
+WorldWideWeb (WWW) is een site op Internet. Internet is een netwerk van miljoenen WWW's. 
+Eigenlijk is een WEBsite een web vol met informatie, en het Internet een web vol met websites.
+
+2. Wat is het verschil tussen HTML, CSS en JavaScript?
+
+HTML, CSS en Javascript zijn verschillende onderdelen van een website. 
+Samen voorzien ze de structuur, het uiterlijk en de functionaliteit die de gebruikers gewoon zijn. 
+In de prille dagen van het commerciële internet werden er nog een deel websites met enkel en alleen HTML opgebouwd. 
+Dit zorgde voor heel simplistische weergaven en weinig mogelijkheden.
+
+Dankzij CSS en Javascript hebben we nu meer mogelijkheden. 
+Er dus een duidelijk verschil tussen een website met enkel HTML en een website met HTML, CSS en 
+Javascript. Ze werken aanvullend en zijn in deze moderne tijdens niet meer weg te denken van het digitale web.
+
+3. Wat is een HTML tag en een HTML element? Hoe open je een HTML tag en hoe sluit
+je een HTML tag. Maak hiervoor voorbeelden en leg uit.
+
+HTML bestaat uit gewone tekst waarin met speciale tekens is aangegeven hoe de tekst moet worden getoond. Zo'n teken, of markering, noemen we een tag
+
+De belangrijkste onderdelen van ons element zijn:
+
+De opening-tag: (het openingslabel) Deze bestaat uit de naam van het element (in dit geval p), ingesloten door kleiner- en groter-dan-tekens. <elementnaam> toont ons waar het element begint. Hier begint ook de invloed die het op de regel uitoefent en in dit geval duidt het het begin van de paragraaf aan.
+De closing-tag:  (het eindlabel) Die is identiek aan de opening-tag, behalve dat er ook nog een schuine streep voor de naam van het element staat. De schuine streep leunt naar voor en staat net achter <. Het eindlabel duidt het einde van het element aan, in dit geval dus het einde van de paragraaf.  Beginners vergeten de eindmarkeerder nogal eens en dat kan tot vreemde resultaten leiden.
+De inhoud: Dit is de inhoud van het element, in dit geval gewoon een regel tekst. 
+
+
+Het element: De openingsmarkeerder plus de eindmarkeerder plus de inhoud zijn gelijk aan het element.
+Elementen kunnen ook attributen krijgen die er zo uitzien:
+
+
+Mijn kat is heel chagrijnig
+
+Stel dat we van deze regel een paragraaf wilden maken, dan zouden we dat doen door deze regel met (<p>) paragraaflabels te omhullen:
+
+<p>Mijn kat is heel chagrijnig</p>
+
+4. HTML gebruikt basis tags om structuur op te bouwen. De <html>, <head> en <body>.
+Geef voor elke element aan waarvoor het dient.
+
+Het <html>-element  representeert de 'root' (het element op het hoogste niveau) van een HTML-document. Er wordt daarom naar verwezen als het root-element. 
+Alle andere elementen moeten nakomelingen zijn van dit element.
+
+Het <head>element is een container voor metadata (data over data) en wordt tussen de <html> tag en de <body> tag geplaatst.
+
+De <body>tag definieert de hoofdtekst van het document.
+
+Het <body>element bevat alle inhoud van een HTML-document, zoals koppen, alinea's, afbeeldingen, hyperlinks, tabellen, lijsten, enz.
+
+Opmerking: er kan maar één <body> element in een HTML-document staan.
+
+
+
