@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms & Tables opdr 1 - 3</title>
+</head>
+<body>
+
+    <h3>1. Maak een HTML form waarbij de gebruiker zijn naam en achternaam in kan
+        vullen.</h3>
+
+        <form>
+           Achternaam: <input type="text" name="Achternaam">
+            </form>
+        <form>
+            Voornaam: <input type="text" name="Voornaam">
+                </form>
+
+    <h3>2. Naast input text fields zijn er ook nog andere input fields.</h3>
+<ul>
+    <li>radiobutton</li>
+<br>
+    <form>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        </form>
+        <br>
+
+    <li>checkbox</li>
+<br>
+    <form>
+        <div>
+            <input type="checkbox" id="scales" name="scales"
+                   checked>
+            <label for="Male">Male</label>
+          </div>
+          
+          <div>
+            <input type="checkbox" id="horns" name="horns">
+            <label for="Female">Female</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="horns" name="horns">
+            <label for="Undefined">Undefined</label>
+          </div>
+        </form>
+        <br>
+
+    <li>password</li>
+    <br>
+    <form>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+        
+        <div>
+            <label for="pass">Password (8 characters minimum):</label>
+            <input type="password" id="pass" name="password"
+                   minlength="8" required>
+        </div>
+        
+        <input type="submit" value="Sign in">
+        </form>
+        <br>
+    <li>reset</li>
+    <br>
+    <form>
+        <div class="controls">
+    
+            <label for="id">User ID:</label>
+            <input type="text" id="id" name="id" />
+    
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+    
+        </div>
+    </form>
+    <br>
+    <li>submit</li>
+    <br>
+    <form><input type="submit" value="Send Request"></form>
+    <br>
+    <li>date</li>
+<br>
+<form>
+    <label for="start">Start date:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2020-09-02"
+       min="2020-09-02" max="2020-09-02">
+
+</form>
+<br>
+
+    <li>search</li>
+    <br>
+<form>
+    <label for="site-search">Search the site:</label>
+<input type="search" id="site-search" name="q"
+       aria-label="Search through site content">
+
+<button>Search</button>
+
+</form>
+<br>
+
+    <li>time</li>
+    <br>
+<form>
+    <label for="appt">Choose a time for your meeting:</label>
+
+<input type="time" id="appt" name="appt"
+       min="09:00" max="17:00" required>
+
+<small>Office hours are 09.00 to 17.00</small>
+
+</form>
+<br>
+
+    <li>hidden</li>
+    <br>
+<form>
+    <input id="prodId" name="prodId" type="hidden" value="xm234jq">
+</form>
+<br>
+
+    <li>email</li>
+    <br>
+<form>
+    <label for="email">Enter your techgrounds.nl email:</label>
+
+<input type="email" id="email"
+       pattern=".+@techgrounds.nl" size="30" required>
+
+</form>
+<br>
+
+</ul>
+    <h3>3. Maak een input email field met een submit knop.</h3>
+<ul>
+    <form action="mailto:kristofferleemburg@gmail.com" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        <br> 
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+        </form>
+    </ul>
+</body>
+</html>
