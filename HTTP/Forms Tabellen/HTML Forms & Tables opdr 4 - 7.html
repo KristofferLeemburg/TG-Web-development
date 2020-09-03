@@ -31,14 +31,16 @@
                   </form><br>
           
                   <form>
-                    <input type="radio" id="male" name="gender" value="male">
                     <label for="man">M:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="vrouw">V:</label>
                     <input type="radio" id="female" name="gender" value="female">
-                    <label for="vrouw">V:</label><br>
+                    
                   </form><br>
         
                   <form>
-                    Postcode: <input type="text" name="Postcode" placeholder="Postcode">
+                    Postcode: <input type="text" name="Postcode" placeholder="Postcode"
+                    minlength="6" maxlength="6" size="6">
                     </form><br>
                     
                     <form>
@@ -115,10 +117,11 @@ willen we graag het volgende weten:</h2>
 
               <p><strong>Bent u in het bezit van een lidmaatschap:</strong></p>  
               <form>
+                <label for="man">Ja:</label>
                 <input type="radio" id="male" name="gender" value="male">
-                <label for="man">JA</label>
+                <label for="vrouw">Nee:</label>
                 <input type="radio" id="female" name="gender" value="female">
-                <label for="vrouw">Nee</label><br>
+                
               </form><br>
     
               <p><strong>Uw email-adres:</strong></p>  
@@ -139,7 +142,7 @@ willen we graag het volgende weten:</h2>
                          name="meeting-time" value="2020-09-02T19:30"
                          min="2020-09-02T00:00" max="2020-12-02T00:00">
                 <br>
-                <p><strong>U gaat akkoord met de reserverings voorwaardes:</strong></p>z
+                <p><strong>U gaat akkoord met de reserverings voorwaardes:</strong></p>
                                 <input type="checkbox" id="scales" name="scales">
                                 <label for="Ja">Ja</label>
                 </tr>    
