@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Intro opdr 4 - 7</title>
+    <link rel="icon" href="techgroundslogo.ico">
+</head>
+
+<body>
+    <div>
+        <h2><u>4. HTML gebruikt basis tags om structuur op te bouwen. De &#60;html&#62;, &#60;head&#62; en
+                &#60;body&#62;. Geef voor elke element aan waarvoor het dient.</u></h2>
+        <p>Het &#60;html&#62; element representeert de 'root' (het element op het hoogste niveau) van een HTML-document.
+            Er wordt daarom naar verwezen als het root-element.
+            Alle andere elementen moeten nakomelingen zijn van dit element.</p>
+        <p>Het &#60;head&#62; element is een container voor metadata &#40;data over data&#41; en wordt tussen de
+            &#60;html&#62; tag en de &#60;body&#62; tag geplaatst.</p>
+        <p>De &#60;body&#62; tag definieert de hoofdtekst van het document.</p>
+        <p>Het &#60;body&#62; element bevat alle inhoud van een HTML-document, zoals koppen, alinea's, afbeeldingen,
+            hyperlinks, tabellen, lijsten, enz.</p>
+        <p>Opmerking: er kan maar één &#60;body&#62; element in een HTML-document staan.</p>
+    </div>
+    <hr>
+    <div>
+        <h2><u>5. Op HTML elementen kun je attributen gebruiken. Wat zijn HTML attributen ? Geef
+                minimaal 5 attributen en maak voorbeelden waar je de attributen in toepast.</u></h2>
+        <p>Attributen zijn nadere specificaties van een element. Ze worden opgenomen in de activering van het element,
+            voor het >-teken. Indien meerdere attributen aan het element worden toegevoegd,
+            worden deze gescheiden door een spatie. In veel gevallen moet voor een attribuut een waarde worden
+            opgegeven.
+            Als voorbeeld wordt aan het eerder genoemde P element het ALIGN attribuut toegevoegd.
+        </p>
+        <p>De naam van een attribuut is ook altijd hoofdletterongevoelig. Meestal geldt hetzelfde voor de waarde, maar
+            er zijn enkele uitzonderingen.</p>
+        <p>De waarde van een attribuut wordt geplaatst tussen dubbele of enkele aanhalingstekens. Wanneer de waarde
+            alleen bestaat uit letters
+            &#40;A-Z of a-z&#41;, cijfers &#40;0-9&#41;, verbindingsstreepjes &#40;-&#41; en punten &#40;.&#41;, zijn
+            aanhalingstekens niet strikt noodzakelijk.
+            Vanwege de uniformiteit wordt echter geadviseerd ook in die gevallen aanhalingstekens te gebruiken.
+        </p>
+        <p>In deze handleiding wordt de HTML-code, net als in de voorbeelden hiervoor, weergegeven in een lettertype met
+            een vaste letterafstand.
+            De namen van elementen en attributen worden altijd in hoofdletters weergegeven, de waarden &#40;tenzij
+            anders vereist&#41; altijd in kleine letters.
+        </p>
+        <p>* The src Attribute
+            The &#60;img&#62; tag is used to embed an image in an HTML page. The src attribute specifies the path to the
+            image to be displayed:
+        </p>
+        <p>
+            Example
+            &#60;img src="img_girl.jpg"&#62;
+        </p>
+        <p>*The width and height Attributes
+            The &#60;img&#62; tag should also contain the width and height attributes, which specifies the width and
+            height of the image (in pixels):
+        </p>
+        <p>Example
+            &#60;img src="img_girl.jpg" width="500" height="600"&#62;
+        </p>
+        <p>*The alt Attribute
+            The required alt attribute for the &#60;img&#62; tag specifies an alternate text for an image, if the image
+            for some reason cannot be displayed. This can be due to slow connection, or an error in the src attribute,
+            or if the user uses a screen reader.
+        </p>
+        <p>Example
+            &#60;img src="img_girl.jpg" alt="Girl with a jacket"&#62;
+        </p>
+        <p>*The style Attribute
+            The style attribute is used to add styles to an element, such as color, font, size, and more.
+        </p>
+        <p>Example
+            &#60;p style="color:red;"&#62;This is a red paragraph.&#60;/p&#62;
+        </p>
+        <p>*The lang Attribute
+            You should always include the lang attribute inside the <html> tag, to declare the language of the Web page.
+            This is meant to assist search engines and browsers.
+        </p>
+        <p>The following example specifies English as the language:</p>
+        <p>&#60;html lang="en"&#62;</p>
+        <p>*The title Attribute
+            The title attribute defines some extra information about an element.
+        </p>
+        <p>The value of the title attribute will be displayed as a tooltip when you mouse over the element:
+        </p>
+        <p>Example
+            &#60;p title="I'm a tooltip"&#62;This is a paragraph.&#60;/p&#62;
+        </p>
+    </div>
+    <hr>
+    <div>
+        <h2><u>6. Waarom is een goede HTML Structuur belangrijk? Is deze code een goede structuur?
+                Leg uit.</u></h2>
+        <p>Een gestructureerde tekst bestaat meestal uit koppen of hoofdingen en paragrafen, ongeacht of je nu een
+            verhaal leest, een krant, een leerboek, een magazine enz.
+            Een gestructureerde inhoud maakt de leeservaring gemakkelijker en aangenamer.
+        </p>
+        <p>De code in het gedeelde html link mist in de tekst tags voor opmaak zoals &#60;h&#62; tags voor de headers en
+            een &#60;p&#62; tag
+            voor de inhoud.
+            Hierdoor word de tekst als een aansluitend blok weergegeven zonder opmaak.
+        </p>
+    </div>
+    <hr>
+    <div>
+        <h2><u>7. Wat is het verschil tussen inline en block elementen?</u></h2>
+        <p>Een block-level element begint altijd op een nieuwe regel en neemt de volle breedte van het browservenster
+            in.
+            Het strekt zich uit naar links en rechts uit zo ver als het kan.
+            Een inline element start niet op een nieuwe regel en beslaat slechts zo veel breedte als het nodig heeft om
+            wat erin staat weer te geven.</p>
+        <p>Elementen op blokniveau zijn elementen die vooraf gegaan en gevolgd worden door de overgang naar een nieuwe
+            regel. Bijvoorbeeld p, pre, blockquote, address, div, center, h1..h6, br, hr, ul, ol, li, dl, dt, dd, table
+            en form.</p>
+        <p>Inline elementen zijn elementen die dezelfde regel kunnen delen met andere elementen en niet vooraf gegaan en
+            gevolgd worden door de overgang naar een nieuwe regel. Voorbeelden zijn a, img, font, span.</p>
+        <p>Inline
+            Standaard zijn &#60;a&#62; elementen inline. Dat wil zeggen dat ze bij manier van spreken tussen de rest van
+            de regel gezet worden.</p>
+        <p>Als je de volgende HTML invoert:</p>
+        <p> &#60;a href="#gedicht1"&#62;De hand van de dichter&#60;/a&#62;<br>
+            &#60;a href="#gedicht2"&#62;Voor het inslapen&#60;/a&#62;<br>
+            &#60;a href="#gedicht3"&#62;De liefde slaapt in haar hart&#60;/a&#62;<br>
+        </p>
+        <p>Block
+            Standaard zijn &#60;li&#62; elementen block elementen. Dat wil zeggen dat elke item uit de lijst op een
+            nieuwe regel komt te staan. Of dat elk item in de lijst de gehele breedte van het browservenster inneemt.
+        </p>
+        <p>Als je de volgende HTML invoert:</p>
+        <p>&#60;ul>
+            &#60;li>De hand van de dichter&#60;/li&#62;<br>
+            &#60;li>Voor het inslapen&#60;/li&#62;<br>
+            &#60;li>De liefde slaapt in haar hart&#60;/li&#62;<br>
+            &#60;/ul>
+        </p>
+    </div>
+
+</body>
+
+</html>
