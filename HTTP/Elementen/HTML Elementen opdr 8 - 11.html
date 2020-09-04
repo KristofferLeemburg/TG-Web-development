@@ -1,126 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Elementen opdr 8 - 11</title>
     <link rel="icon" href="techgroundslogo.ico">
 </head>
+
 <body>
     <header>
-            <nav>
-                <a href="#Tigers">Tigers</a>
-                <a href="#Lions">Lions</a>
-                <a href="#Monkeys">Monkeys</a>
-                <a href="#Hippopotaumus">Hippopotaumus</a>
-            </nav>
+        <nav>
+            <a href="#Tigers">Tigers</a>
+            <a href="#Lions">Lions</a>
+            <a href="#Monkeys">Monkeys</a>
+            <a href="#Hippopotaumus">Hippopotaumus</a>
+        </nav>
     </header>
 
     <h2>8. Zoek een willekeurig video en sla dit op in je computer. Laadt dit bestand in
         als een video op het scherm.</h2>
 
-        <video width="320" height="240" controls>
-            <source src="beer.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+    <video width="320" height="240" controls>
+        <source src="beer.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-          <p>Net als bij een audio bestand is de &#60;source&#62; tag handig omdat de browser 
-              de source selecteerd die hij kan gebruiken.</p>
-    
+    <p>Net als bij een audio bestand is de &#60;source&#62; tag handig omdat de browser
+        de source selecteerd die hij kan gebruiken.</p>
+
     <h2>9. Maak gebruik van de verschillende soorten lijsten om het volgende resultaat
         op je webpagina weer te geven.</h2>
 
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
         <ol>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
+            <li>sub item 1</li>
+            <li>sub item 2</li>
         </ol>
+        <li>item 3</li>
+    </ol>
 
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <ul>
+            <li>sub item 1</li>
+            <li>sub item 2</li>
+        </ul>
+        <li>item 3</li>
+    </ul>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
         <ol>
-            <li>item 1</li>
-            <li>item 2</li>
-            <ol>
-                <li>sub item 1</li>
-                <li>sub item 2</li>
-            </ol>
-            <li>item 3</li>
+            <li>sub item 1</li>
+            <li>sub item 2</li>
         </ol>
+        <li>item 3</li>
+    </ul>
 
-        <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-        </ul>
+    <h2>10. Bouw een navigatiebalk door gebruik te maken uit een lijst dat bestaat uit de
+        volgende onderdelen:</h2>
 
-        <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <ul>
-                <li>sub item 1</li>
-                <li>sub item 2</li>
-            </ul>
-            <li>item 3</li>
-        </ul>
+    <ul>
+        <li>Tigers</li>
+        <li>Lions</li>
+        <li>Monkeys</li>
+        <li>Hippopotaumus</li>
+    </ul>
 
-        <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <ol>
-                <li>sub item 1</li>
-                <li>sub item 2</li>
-            </ol>
-            <li>item 3</li>
-        </ul>
+    <h2>11. Creëer nu voor elk onderdeel een header en een bijbehorende stuk tekst en
+        zorg ervoor dat door te klikken op de links in de navigatiebalk je gerefereerd
+        wordt naar het bijbehorende onderdeel.</h2>
 
-        <h2>10. Bouw een navigatiebalk door gebruik te maken uit een lijst dat bestaat uit de
-            volgende onderdelen:</h2>
 
-            <ul>
-                <li>Tigers</li>
-                <li>Lions</li>
-                <li>Monkeys</li>
-                <li>Hippopotaumus</li>
-            </ul>
+    <h3 id="Tigers">Tigers</h3>
+    <p>De tijger is een bedreigde diersoort die verspreid over Azië voorkomt.
+        De enorme teruggang in aantal moet worden toegeschreven aan het steeds verder oprukken van de mens.
+        Veel rustige natuurgebieden zijn daardoor verloren gegaan, terwijl de tijger een groot leefgebied nodig heeft.
+        Verder is er steeds minder groot wild voorhanden dat als voedsel kan dienen.
+        Daarnaast wordt de tijger vaak het slachtoffer van stropers, omdat zijn fraaie huid,
+        botten en lichaamsdelen op de zwarte markt veel geld opbrengen.</p>
 
-        <h2>11. Creëer nu voor elk onderdeel een header en een bijbehorende stuk tekst en
-            zorg ervoor dat door te klikken op de links in de navigatiebalk je gerefereerd
-            wordt naar het bijbehorende onderdeel.</h2>   
+    <h3 id="Lions">Lions</h3>
+    <p>De leeuw is een grote katachtige met een brede kop, een korte snuit en relatief kleine,
+        ronde oren. Hij heeft een kortharige asgrijze of zandgele vacht
+        maar variërend van okerbruin tot bijna wit en een donker kwastje aan het puntje
+        van de staart. Over de vacht verspreid liggen vage vlekken,
+        die vooral bij jongere dieren goed te zien zijn.
+        De vlekken vervagen naarmate het dier ouder wordt en zullen meestal uiteindelijk verdwijnen.
+        De meeste mannetjes hebben dichte zwarte, bruine of gele manen met een variërende lengte op de kop,
+        hals en schouders. Bij de nu uitgestorven ondersoorten uit Noord-Afrika en de Kaap liep de maan als een franje
+        over de buik.
+        Het duurt meestal een jaar of zes eer de maan goed ontwikkeld is.
+        Wijfjes zijn kleiner en hebben geen manen.</p>
 
-        
-        <h3 id="Tigers">Tigers</h3>
-        <p>De tijger is een bedreigde diersoort die verspreid over Azië voorkomt. 
-            De enorme teruggang in aantal moet worden toegeschreven aan het steeds verder oprukken van de mens. 
-            Veel rustige natuurgebieden zijn daardoor verloren gegaan, terwijl de tijger een groot leefgebied nodig heeft. 
-            Verder is er steeds minder groot wild voorhanden dat als voedsel kan dienen. 
-            Daarnaast wordt de tijger vaak het slachtoffer van stropers, omdat zijn fraaie huid, 
-            botten en lichaamsdelen op de zwarte markt veel geld opbrengen.</p>
+    <h3 id="Monkeys">Monkeys</h3>
+    <p>Apen zijn over het algemeen middelgrote boombewonende dieren.
+        Bij veel soorten is de staart langer dan de rest van het lichaam.
+        Bij enkele apen van de Nieuwe Wereld heeft deze staart zich ontwikkeld tot een grijpstaart.
+        Bij mensapen ontbreekt de staart geheel. De benen zijn langer dan de armen, maar niet bij gibbons.
+        Apen hebben relatief grote hersenen en een grote, bolvormige hersenkas,
+        waarmee ze zich onderscheiden van de halfapen. Veel soorten worden als vrij intelligent beschouwd:
+        ze zijn vindingrijk, speels en passen zich gemakkelijk aan veranderende omstandigheden aan.
+        Ook zijn apen meer op hun zicht aangewezen dan de halfapen, die een beter ontwikkeld gehoor en reukzin hebben.
+        De ogen staan recht naar voren gericht.</p>
 
-        <h3 id="Lions">Lions</h3>
-        <p>De leeuw is een grote katachtige met een brede kop, een korte snuit en relatief kleine, 
-            ronde oren. Hij heeft een kortharige asgrijze of zandgele vacht 
-            maar variërend van okerbruin tot bijna wit en een donker kwastje aan het puntje 
-            van de staart. Over de vacht verspreid liggen vage vlekken, 
-            die vooral bij jongere dieren goed te zien zijn. 
-            De vlekken vervagen naarmate het dier ouder wordt en zullen meestal uiteindelijk verdwijnen. 
-            De meeste mannetjes hebben dichte zwarte, bruine of gele manen met een variërende lengte op de kop, 
-            hals en schouders. Bij de nu uitgestorven ondersoorten uit Noord-Afrika en de Kaap liep de maan als een franje over de buik. 
-            Het duurt meestal een jaar of zes eer de maan goed ontwikkeld is. 
-            Wijfjes zijn kleiner en hebben geen manen.</p>
-
-        <h3 id="Monkeys">Monkeys</h3>
-        <p>Apen zijn over het algemeen middelgrote boombewonende dieren. 
-            Bij veel soorten is de staart langer dan de rest van het lichaam. 
-            Bij enkele apen van de Nieuwe Wereld heeft deze staart zich ontwikkeld tot een grijpstaart. 
-            Bij mensapen ontbreekt de staart geheel. De benen zijn langer dan de armen, maar niet bij gibbons. 
-            Apen hebben relatief grote hersenen en een grote, bolvormige hersenkas, 
-            waarmee ze zich onderscheiden van de halfapen. Veel soorten worden als vrij intelligent beschouwd: 
-            ze zijn vindingrijk, speels en passen zich gemakkelijk aan veranderende omstandigheden aan. 
-            Ook zijn apen meer op hun zicht aangewezen dan de halfapen, die een beter ontwikkeld gehoor en reukzin hebben. 
-            De ogen staan recht naar voren gericht.</p>
-
-        <h3 id="Hippopotaumus">Hippopotaumus</h3>
-        <p>Tegenwoordig zijn er nog slechts twee levende soorten, maar drie andere soorten hebben tot in het Holoceen op Madagaskar geleefd. 
-            Er zijn vrij veel fossielen gevonden, maar niet erg oud en de meeste behoren tot het geslacht Hippopotamus of Hexaprotodon. 
-            Er hebben vroeger ook nijlpaarden in Europa geleefd.</p>
+    <h3 id="Hippopotaumus">Hippopotaumus</h3>
+    <p>Tegenwoordig zijn er nog slechts twee levende soorten, maar drie andere soorten hebben tot in het Holoceen op
+        Madagaskar geleefd.
+        Er zijn vrij veel fossielen gevonden, maar niet erg oud en de meeste behoren tot het geslacht Hippopotamus of
+        Hexaprotodon.
+        Er hebben vroeger ook nijlpaarden in Europa geleefd.</p>
 </body>
+
 </html>

@@ -1,239 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Forms & Tables opdr 8 - 11</title>
-    <link rel="icon" href="techgroundslogo.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms & Tables opdr 8 - 11</title>
+  <link rel="icon" href="techgroundslogo.ico">
 </head>
+
 <body>
 
-    <h2>8. Maak een reserverings formulier om een boek te reserveren. In dit formulier
-        willen we graag het volgende weten:</h2>
-        <ul>
-            <li>Naam van dat persoon</li>
-            <li>Telefoonnummer</li>
-            <li>E-mail van dat persoon</li>
-            <li>Naam van dat boek</li>
-            <li>Aantal boeken om te reserveren. Het aantal moet minimaal 1 en maximaal 5
-                zijn.</li>
-            <li>Een submit knop</li>
-            </ul><br><br>
+  <h2>8. Maak een reserverings formulier om een boek te reserveren. In dit formulier
+    willen we graag het volgende weten:</h2>
+  <ul>
+    <li>Naam van dat persoon</li>
+    <li>Telefoonnummer</li>
+    <li>E-mail van dat persoon</li>
+    <li>Naam van dat boek</li>
+    <li>Aantal boeken om te reserveren. Het aantal moet minimaal 1 en maximaal 5
+      zijn.</li>
+    <li>Een submit knop</li>
+  </ul><br><br>
 
-    <fieldset style="widows: 100%;">
-        <legend>Reserverings Formulier</legend>
-          <table style="width:50%">
-                
-            <tr>
-              <td><p><strong>Uw gegevens:</strong></p></td>
-              <td><form>
-                <input type="text" name="Achternaam" placeholder="Achternaam" size="30">
-                </form><br>
-                
-                <form>
-                <input type="text" name="Voornaam" placeholder="Voornaam" size="30">
-                </form><br>
-            </td>
-             
-            </tr>
-            <tr>
-              <td><p><strong>Uw telefoonnummer:</strong></p></td>
-              <td><form>
-                <input type="tel" id="telefoonnummer" name="telefoonnummer"
-                pattern="[0-9]{10}" maxlength="10" size="30">
-              </form></td>
-            </tr>
-        
-            <tr>
-              <td><p><strong>Uw email-adres:</strong></p> </td>
-              <td>
-                <form action="/action_page.php">
-                  <input type="email" id="email" name="email" size="30">
-                </form></td>
-            </tr>
-        
-            <tr>
-              <td><p><strong>Aantal boeken om te reserveren:</strong></p></td>
-              <td><input type="number" id="boeken" name="boeken"
-                min="1" max="5" size="30">
-              </td>
-            </tr>
-        
-            <tr>
-              <td><p><strong>Naam van het boek:</strong></p></td>
-              <td><input type="text" id="name" name="name" required
-                minlength="4" maxlength="30" size="30"><br>
-               <input type="text" id="name" name="name" required
-                minlength="4" maxlength="30" size="30"><br>
-               <input type="text" id="name" name="name" required
-                minlength="4" maxlength="30" size="30"><br>
-               <input type="text" id="name" name="name" required
-                minlength="4" maxlength="30" size="30"><br>
-               <input type="text" id="name" name="name" required
-                minlength="4" maxlength="30" size="30"><br>
-              </td>
-            </tr>
-          </table>
-            </fieldset>
-            <input type="submit" value="submit"><br><br><br>
+  <fieldset style="widows: 100%;">
+    <legend>Reserverings Formulier</legend>
+    <table style="width:50%">
 
-            <h2>9. Bouw nu zelf een formulier met wat je hiervoor hebt geleerd.</h2><br><br>
+      <tr>
+        <td>
+          <p><strong>Uw gegevens:</strong></p>
+        </td>
+        <td>
+          <form>
+            <input type="text" name="Achternaam" placeholder="Achternaam" size="30">
+          </form><br>
 
-            <fieldset style="widows: 100%;">
-                <legend>Vakantie aanvraag formulier</legend>
-              <table style="width:50%">
-                
-                <tr>
-                  <td><p><strong>Reisdocument:</strong></p></td>
-                  <td><select name="Reisdocument">
-                    <option value="">-- select one --</option>
-                    <option value="Paspoort"selected>Paspoort</option>
-                    <option value="Identiteitsbewijs">Identiteitsbewijs</option>
-                    <option value="Verblijfsvergunning">Verblijfsvergunning</option>
-                  </select></td>
-                 
-                </tr>
-                <tr>
-                  <td><p><strong>Nationaliteit:</strong></p></td>
-                  <td><select name="Nationaliteit">
-                      <option value="">-- select one --</option>
-                      <option value="afghan">Afghan</option>
-                      <option value="albanian">Albanian</option>
-                      <option value="algerian">Algerian</option>
-                      <option value="dutch" selected>Dutch</option>
-                      <option value="zimbabwean">Zimbabwean</option>
-                  </select></td>
-                </tr>
-            
-                <tr>
-                  <td><p><strong>Land van afgifte:</strong></p></td>
-                  <td><select name="Land van afgifte">
-                    <option value="">-- select one --</option>
-                    <option>Afghanistan</option>
-                    <option>Albania</option>
-                    <option>Algeria</option>
-                    <option selected>Netherlands</option>
-                    <option>Zimbabwe</option>
-                  </select></td>
-                </tr>
-            
-                <tr>
-                  <td><p><strong>Paspoortnummer:</strong></p></td>
-                  <td><input type="text" id="name" name="name" required
-                    minlength="8" maxlength="20" size="20">
-                  </td>
-                </tr>
-            
-                <tr>
-                  <td><p><strong>Datum van afgifte:</strong></p></td>
-                  <td><input type="date" id="start" name="date-start"
-                    min="2010-01-01" max="2020-09-01">
-                  </td>
-                </tr>
-            
-                <tr>
-                  <td><p><strong>Verloopdatum:</strong></p></td>
-                  <td><input type="date" id="start" name="date-expire"
-                    min="2010-01-01" max="2030-09-01">
-                  </td>
-                </tr>
-            
-                <tr>
-                  <td><p><strong>Geslacht:</strong></p></td>
-                  <td>
-                    <label for="man">M:</label>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="vrouw">V:</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                  </td>
-                </tr>
-            
-                <tr>
-                  <td><p><strong>Voornaam:</strong></p></td>
-                  <td><input type="text" name="Voornaam" placeholder="Voornaam">
-                  </td>
-                </tr>
-            
-                <tr>
-                  <td><p><strong>Achternaam:</strong></p></td>
-                  <td><input type="text" name="Achternaam" placeholder="Achternaam">
-                  </td>
-                </tr>
-                
-              </table>
-              </fieldset><br><br>
+          <form>
+            <input type="text" name="Voornaam" placeholder="Voornaam" size="30">
+          </form><br>
+        </td>
 
- <h2>10. Om een tabel te maken heb je volgende elementen nodig, Geef voor elke element een definitie.:</h2><br><br>
- 
- <ul>
-     <li>&#60;table&#62;</li><p>
-     Het HTML &#60;table&#62; element vertegenwoordigt gegevens in tabelvorm, dat wil zeggen informatie 
-     die wordt gepresenteerd in een tweedimensionale tabel die bestaat uit rijen en kolommen met cellen die gegevens bevatten.
+      </tr>
+      <tr>
+        <td>
+          <p><strong>Uw telefoonnummer:</strong></p>
+        </td>
+        <td>
+          <form>
+            <input type="tel" id="telefoonnummer" name="telefoonnummer" pattern="[0-9]{10}" maxlength="10" size="30">
+          </form>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p><strong>Uw email-adres:</strong></p>
+        </td>
+        <td>
+          <form action="/action_page.php">
+            <input type="email" id="email" name="email" size="30">
+          </form>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p><strong>Aantal boeken om te reserveren:</strong></p>
+        </td>
+        <td><input type="number" id="boeken" name="boeken" min="1" max="5" size="30">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p><strong>Naam van het boek:</strong></p>
+        </td>
+        <td><input type="text" id="name" name="name" required minlength="4" maxlength="30" size="30"><br>
+          <input type="text" id="name" name="name" required minlength="4" maxlength="30" size="30"><br>
+          <input type="text" id="name" name="name" required minlength="4" maxlength="30" size="30"><br>
+          <input type="text" id="name" name="name" required minlength="4" maxlength="30" size="30"><br>
+          <input type="text" id="name" name="name" required minlength="4" maxlength="30" size="30"><br>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+  <input type="submit" value="submit"><br><br><br>
+
+  <h2>9. Bouw nu zelf een formulier met wat je hiervoor hebt geleerd.</h2><br><br>
+
+  <fieldset style="widows: 100%;">
+    <legend>Vakantie aanvraag formulier</legend>
+    <table style="width:50%">
+
+      <tr>
+        <td>
+          <p><strong>Reisdocument:</strong></p>
+        </td>
+        <td><select name="Reisdocument">
+            <option value="">-- select one --</option>
+            <option value="Paspoort" selected>Paspoort</option>
+            <option value="Identiteitsbewijs">Identiteitsbewijs</option>
+            <option value="Verblijfsvergunning">Verblijfsvergunning</option>
+          </select></td>
+
+      </tr>
+      <tr>
+        <td>
+          <p><strong>Nationaliteit:</strong></p>
+        </td>
+        <td><select name="Nationaliteit">
+            <option value="">-- select one --</option>
+            <option value="afghan">Afghan</option>
+            <option value="albanian">Albanian</option>
+            <option value="algerian">Algerian</option>
+            <option value="dutch" selected>Dutch</option>
+            <option value="zimbabwean">Zimbabwean</option>
+          </select></td>
+      </tr>
+
+      <tr>
+        <td>
+          <p><strong>Land van afgifte:</strong></p>
+        </td>
+        <td><select name="Land van afgifte">
+            <option value="">-- select one --</option>
+            <option>Afghanistan</option>
+            <option>Albania</option>
+            <option>Algeria</option>
+            <option selected>Netherlands</option>
+            <option>Zimbabwe</option>
+          </select></td>
+      </tr>
+
+      <tr>
+        <td>
+          <p><strong>Paspoortnummer:</strong></p>
+        </td>
+        <td><input type="text" id="name" name="name" required minlength="8" maxlength="20" size="20">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p><strong>Datum van afgifte:</strong></p>
+        </td>
+        <td><input type="date" id="start" name="date-start" min="2010-01-01" max="2020-09-01">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p><strong>Verloopdatum:</strong></p>
+        </td>
+        <td><input type="date" id="start" name="date-expire" min="2010-01-01" max="2030-09-01">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p><strong>Geslacht:</strong></p>
+        </td>
+        <td>
+          <label for="man">M:</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="vrouw">V:</label>
+          <input type="radio" id="female" name="gender" value="female">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p><strong>Voornaam:</strong></p>
+        </td>
+        <td><input type="text" name="Voornaam" placeholder="Voornaam">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p><strong>Achternaam:</strong></p>
+        </td>
+        <td><input type="text" name="Achternaam" placeholder="Achternaam">
+        </td>
+      </tr>
+
+    </table>
+  </fieldset><br><br>
+
+  <h2>10. Om een tabel te maken heb je volgende elementen nodig, Geef voor elke element een definitie.:</h2><br><br>
+
+  <ul>
+    <li>&#60;table&#62;</li>
+    <p>
+      Het HTML &#60;table&#62; element vertegenwoordigt gegevens in tabelvorm, dat wil zeggen informatie
+      die wordt gepresenteerd in een tweedimensionale tabel die bestaat uit rijen en kolommen met cellen die gegevens
+      bevatten.
     </p>
 
-    <li>&#60;thead&#62;</li><p>
-        Het HTML &#60;thead&#62; element 
-        definieert een reeks rijen die de kop van de kolommen van de tabel definiëren.
-       </p>
-    
-     <li>&#60;tbody&#62;</li><p>
-     Het HTML &#60;tbody&#62; element 
-     bevat een set tabelrijen (&#60;tr&#62; -elementen), wat aangeeft dat ze de body van de tabel (&#60;table&#62;) vormen.
+    <li>&#60;thead&#62;</li>
+    <p>
+      Het HTML &#60;thead&#62; element
+      definieert een reeks rijen die de kop van de kolommen van de tabel definiëren.
     </p>
 
-     <li>&#60;tfoot&#62;</li><p>
-     Het HTML &#60;tfoot&#62; element 
-definieert een reeks rijen die de kolommen van de tabel samenvatten.
+    <li>&#60;tbody&#62;</li>
+    <p>
+      Het HTML &#60;tbody&#62; element
+      bevat een set tabelrijen (&#60;tr&#62; -elementen), wat aangeeft dat ze de body van de tabel (&#60;table&#62;)
+      vormen.
     </p>
 
-     <li>&#60;th&#62;</li><p>
-     definieert een cel als koptekst van een groep tabelcellen. De exacte aard van deze groep wordt bepaald door de kenmerken scope en headers.
+    <li>&#60;tfoot&#62;</li>
+    <p>
+      Het HTML &#60;tfoot&#62; element
+      definieert een reeks rijen die de kolommen van de tabel samenvatten.
     </p>
 
-     <li>&#60;tr&#62;</li><p>
-     Het HTML &#60;tr&#62; element 
-definieert een rij cellen in een tabel. De cellen van de rij kunnen vervolgens worden gemaakt met behulp van een combinatie van &#60;td&#62; (datacel) en &#60;th&#62; (header) -elementen.
+    <li>&#60;th&#62;</li>
+    <p>
+      definieert een cel als koptekst van een groep tabelcellen. De exacte aard van deze groep wordt bepaald door de
+      kenmerken scope en headers.
     </p>
 
-     <li>&#60;td&#62;</li><p>
-     Het HTML &#60;td&#62; element 
-definieert een cel van een tabel die gegevens bevat. Het neemt deel aan het tafelmodel.
+    <li>&#60;tr&#62;</li>
+    <p>
+      Het HTML &#60;tr&#62; element
+      definieert een rij cellen in een tabel. De cellen van de rij kunnen vervolgens worden gemaakt met behulp van een
+      combinatie van &#60;td&#62; (datacel) en &#60;th&#62; (header) -elementen.
     </p>
- </ul><br><br>
 
- <h2>11. Maak een tabel met &#60;table&#62; element. Zie hieronder:</h2><br><br>
+    <li>&#60;td&#62;</li>
+    <p>
+      Het HTML &#60;td&#62; element
+      definieert een cel van een tabel die gegevens bevat. Het neemt deel aan het tafelmodel.
+    </p>
+  </ul><br><br>
 
- <table>
+  <h2>11. Maak een tabel met &#60;table&#62; element. Zie hieronder:</h2><br><br>
+
+  <table>
     <thead>
-        <tr>
-            <th scope="col">Voornaam</th>
-            <th scope="col">Achternaam</th>
-            <th scope="col">Leeftijd</th>
-            <th scope="col">Telefoonnr</th>
-        </tr>
+      <tr>
+        <th scope="col">Voornaam</th>
+        <th scope="col">Achternaam</th>
+        <th scope="col">Leeftijd</th>
+        <th scope="col">Telefoonnr</th>
+      </tr>
     </thead>
     <tbody>
-        <tr>
-            <td scope="row">John</th>
-            <td>Doe</td>
-            <td>41</td>
-            <td>+31 12345678</td>
-        </tr>
-        <tr>
-            <td scope="row">Steven</th>
-            <td>Smith</td>
-            <td>32</td>
-            <td>+31 12345678</td>
-        </tr>
-        <tr>
-          <td scope="row">Alexabnder</th>
-          <td>Beave</td>
-          <td>16</td>
-          <td>+31 12345678</td>
+      <tr>
+        <td scope="row">John</th>
+        <td>Doe</td>
+        <td>41</td>
+        <td>+31 12345678</td>
+      </tr>
+      <tr>
+        <td scope="row">Steven</th>
+        <td>Smith</td>
+        <td>32</td>
+        <td>+31 12345678</td>
+      </tr>
+      <tr>
+        <td scope="row">Alexabnder</th>
+        <td>Beave</td>
+        <td>16</td>
+        <td>+31 12345678</td>
       </tr>
     </tbody>
-</table><br><br>
+  </table><br><br>
 
 
 </body>
+
 </html>
