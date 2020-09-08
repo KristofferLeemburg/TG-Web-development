@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All CSS Selectors</title>
     <link rel="icon" href="TechgroundsLogo.ico">
+    <link rel="stylesheet" href="stylesheet.css">
     <style>
         table.center {
             margin-left: auto;
@@ -14,14 +15,14 @@
 
         h2,
         h4 {
-            background-color: #fbff00;
+            background-color: #459dcf;
         }
 
         th {
             padding-top: 12px;
             padding-bottom: 12px;
             text-align: left;
-            background-color: #fbff00;
+            background-color: #459dcf;
             color: black;
             text-align: center;
         }
@@ -38,7 +39,59 @@
 </head>
 
 <body>
-
+    <div class="dropdown">
+        <button class="dropbtn">Selectors&Visuals</button>
+        <div class="dropdown-content">
+            <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_1_4/CssSelectorsVisualRulesOpdr1_4.html">Opdracht
+                1/4</a>
+            <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_1_4/Opdracht4.html">Opdracht 4</a>
+            <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/CssSelectorsVisualRulesOpdr5_8.html">Opdracht
+                5/8</a>
+            <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/CssSelectorsVisualRulesOpdr5_8.html">Child/Adjacent/General Selectors</a>
+            <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/AllSelectors.html">Alle Selectors</a>
+            <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/Opdracht5.html">Opdracht 5</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Boxmodel</button>
+        <div class="dropdown-content">
+            <a href="/css/boxmodel/CssBoxmodelOpdr1_3.html">Opdracht 1/3</a>
+            <a href="/css/boxmodel/CssBoxmodelOpdr4_7.html">Opdracht 4/7</a>
+            <a href="/css/boxmodel/CssBoxmodelOpdr8_9.html">Opdracht 8/9</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Display&Positioning</button>
+        <div class="dropdown-content">
+            <a href="/css/display_positioning/CssDisplayPositioningOpdr1_4.html">Opdracht 1/4</a>
+            <a href="/css/display_positioning/CssDisplayPositioningOpdr5_8.html">Opdracht 5/8</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Psuedo Elements</button>
+        <div class="dropdown-content">
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Flexbox</button>
+        <div class="dropdown-content">
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Transitions</button>
+        <div class="dropdown-content">
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Responsive</button>
+        <div class="dropdown-content">
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Eindopdracht</button>
+        <div class="dropdown-content">
+        </div>
+    </div>
     <h2>CSS Selectors</h2>
 
     <p>CSS selectors worden gebruikt om bepaalde HTML elementen te vinden of te selecteren die je wilt stylen.
@@ -48,7 +101,7 @@
         <li>Simple selectors (selecteerd elementen op naam, id, class)</li>
         <li>Combinator selectors (selecteerd elementen op een specifieke relatie tussen elkaar)</li>
         <li>Pseudo-class selectors (selecteerd elementen op een bepaalde staat)</li>
-        <li>Attribute selectors (selecteerd elementen op een attribute of attribute value)</li>
+        <li>Attribute selectors (selecteerd elementen op een attribuut of attribuut waarde)</li>
     </ul>
     </p>
     <br>
@@ -67,97 +120,97 @@
         <tr>
             <td>.class1.class2</td>
             <td>.name1.name2</td>
-            <td>Selecteerd alle elements with both name1 and name2 set within its class attribute</td>
+            <td>Selecteerd alle elementen met beide name1 and name2 set binnenin de class attribuut</td>
         </tr>
         <tr>
             <td>.class1 .class2 </td>
             <td>.name1 .name2</td>
-            <td>Selecteerd alle elements with name2 that is a descendant of an element with name1</td>
+            <td>Selecteerd alle elementen met name2 die een descendant zijn van een element met name1</td>
         </tr>
         <tr>
             <td>#id</td>
             <td>#firstname</td>
-            <td>Selecteerd het element with id="firstname"</td>
+            <td>Selecteerd het element met id="firstname"</td>
         </tr>
         <tr>
             <td>*</td>
             <td>*</td>
-            <td>Selecteerd alle elements</td>
+            <td>Selecteerd alle elementen</td>
         </tr>
         <tr>
             <td>element</td>
             <td>p</td>
-            <td>Selecteerd alle &#60;p&#62; elements</td>
+            <td>Selecteerd alle &#60;p&#62; elementen</td>
         </tr>
         <tr>
             <td>element.class</td>
             <td>p.intro</td>
-            <td>Selecteerd alle &#60;p&#62; elements with class="intro"</td>
+            <td>Selecteerd alle &#60;p&#62; elementen met class="intro"</td>
         </tr>
         <tr>
             <td>element.class</td>
             <td>p.intro</td>
-            <td>Selecteerd alle &#60;p&#62; elements with class="intro"</td>
+            <td>Selecteerd alle &#60;p&#62; elementen met class="intro"</td>
         </tr>
         <tr>
             <td>element.class</td>
             <td>p.intro</td>
-            <td>Selecteerd alle &#60;p&#62; elements with class="intro"</td>
+            <td>Selecteerd alle &#60;p&#62; elementen met class="intro"</td>
         </tr>
         <tr>
             <td>element element</td>
             <td>div p</td>
-            <td>Selecteerd alle &#60;p&#62; elements inside &#60;div&#62; elements</td>
+            <td>Selecteerd alle &#60;p&#62; elementen binnenin &#60;div&#62; elementen</td>
         </tr>
         <tr>
             <td>element&#62;element</td>
             <td>div &#62; p</td>
-            <td>Selecteerd alle &#60;p&#62; elements where the parent is a &#60;div&#62; element</td>
+            <td>Selecteerd alle &#60;p&#62; elementen waar de parent een &#60;div&#62; element is</td>
         </tr>
         <tr>
             <td>element+element</td>
             <td>div + p</td>
-            <td>Selecteerd alle &#60;p&#62; elements that are placed immediately after &#60;div&#62; elements</td>
+            <td>Selecteerd alle &#60;p&#62; elementen die geplaatst zijn direct na &#60;div&#62; elementen</td>
         </tr>
         <tr>
             <td>element1~element2</td>
             <td>p ~ ul</td>
-            <td>Selecteerd elk &#60;ul&#62; element that are preceded by a &#60;p&#62; element</td>
+            <td>Selecteerd alle &#60;ul&#62; elementen die voorafgegaan door een &#60;p&#62; elementen</td>
         </tr>
         <tr>
             <td>&#91;attribute&#93;</td>
             <td>&#91;target&#93;</td>
-            <td>Selecteerd alle elements with a target attribute</td>
+            <td>Selecteerd alle elementen met een target attribuut</td>
         </tr>
         <tr>
             <td>&#91;attribute=value&#93;</td>
             <td>&#91;target=_blank&#93;</td>
-            <td>Selecteerd alle elements with target="_blank"</td>
+            <td>Selecteerd alle elementen met target="_blank"</td>
         </tr>
         <tr>
             <td>&#91;attribute~=value&#93;</td>
             <td>&#91;title~=flower&#93;</td>
-            <td>Selecteerd alle elements with a title attribute containing the word "flower"</td>
+            <td>Selecteerd alle elementen met een titel attribuut die het woord "flower" bevatten</td>
         </tr>
         <tr>
             <td>&#91;attribute|=value&#93;</td>
             <td>&#91;lang|=en&#93;</td>
-            <td>Selecteerd alle elements with a lang attribute value starting with "en"</td>
+            <td>Selecteerd alle elementen met een lang attribuut waarde startend met "en"</td>
         </tr>
         <tr>
             <td>&#91;attribute^=value&#93;</td>
             <td>a&#91;href^="https"&#93;</td>
-            <td>Selecteerd elk &#60;a&#62; element whose href attribute value begins with "https"</td>
+            <td>Selecteerd alle &#60;a&#62; elementen welke href attribuut waarde begins met "https"</td>
         </tr>
         <tr>
             <td>&#91;attribute$=value&#93;</td>
             <td>a&#91;href$=".pdf"&#93;</td>
-            <td>Selecteerd elk &#60;a&#62; element whose href attribute value ends with ".pdf"</td>
+            <td>Selecteerd elk &#60;a&#62; element whose href attribuut waarde ends met ".pdf"</td>
         </tr>
         <tr>
             <td>&#91;attribute*=value&#93;</td>
             <td>a&#91;href*="w3schools"&#93;</td>
-            <td>Selecteerd elk &#60;a&#62; element whose href attribute value contains the substring "w3schools"</td>
+            <td>Selecteerd elk &#60;a&#62; element whose href attribuut waarde contains de substring "w3schools"</td>
         </tr>
         <tr>
             <td>:active</td>
@@ -167,62 +220,62 @@
         <tr>
             <td>::after</td>
             <td>p::after</td>
-            <td>Insert something after the content of each &#60;p&#62; element</td>
+            <td>Voeg iets toe na de content van elke &#60;p&#62; element</td>
         </tr>
         <tr>
             <td>::before</td>
             <td>p::before</td>
-            <td>Insert something before the content of each &#60;p&#62; element</td>
+            <td>Voeg iets toe voor de content van elke &#60;p&#62; element</td>
         </tr>
         <tr>
             <td>:checked</td>
             <td>input:checked</td>
-            <td>Selecteerd every checked &#60;input&#62; element</td>
+            <td>Selecteerd elke checked &#60;input&#62; element</td>
         </tr>
         <tr>
             <td>:default</td>
             <td>input:default</td>
-            <td>Selecteerd the default &#60;input&#62; element</td>
+            <td>Selecteerd de default &#60;input&#62; element</td>
         </tr>
         <tr>
             <td>:disabled</td>
             <td>input:disabled</td>
-            <td>Selecteerd every disabled &#60;input&#62; element</td>
+            <td>Selecteerd elke disabled &#60;input&#62; element</td>
         </tr>
         <tr>
             <td>:empty</td>
             <td>p:empty</td>
-            <td>Selecteerd every &#60;p&#62; element that has no children (including text nodes)</td>
+            <td>Selecteerd elke &#60;p&#62; element die has no children (including text nodes)</td>
         </tr>
         <tr>
             <td>:enabled</td>
             <td>input:enabled</td>
-            <td>Selecteerd every enabled &#60;input&#62; element</td>
+            <td>Selecteerd elke enabled &#60;input&#62; element</td>
         </tr>
         <tr>
             <td>:first-child</td>
             <td>p:first-child</td>
-            <td>Selecteerd every &#60;p&#62; element that is the first child of its parent</td>
+            <td>Selecteerd elke &#60;p&#62; element die is de first child van zijn parent</td>
         </tr>
         <tr>
             <td>::first-letter</td>
             <td>p::first-letter</td>
-            <td>Selecteerd the first letter of every &#60;p&#62; element</td>
+            <td>Selecteerd de eerste letter van elke &#60;p&#62; element</td>
         </tr>
         <tr>
             <td>::first-line</td>
             <td>p::first-line</td>
-            <td>Selecteerd the first line of every &#60;p&#62; element</td>
+            <td>Selecteerd de eerste lijn van elke &#60;p&#62; element</td>
         </tr>
         <tr>
             <td>:first-of-type</td>
             <td>p:first-of-type</td>
-            <td>Selecteerd every &#60;p&#62; element that is the first &#60;p&#62; element of its parent</td>
+            <td>Selecteerd elk &#60;p&#62; element die is de first &#60;p&#62; element van zijn parent</td>
         </tr>
         <tr>
             <td>:focus</td>
             <td>input:focus</td>
-            <td>Selecteerd the input element which has focus</td>
+            <td>Selecteerd de input element which has focus</td>
         </tr>
         <tr>
             <td>:hover</td>
@@ -232,129 +285,129 @@
         <tr>
             <td>:indeterminate</td>
             <td>input:indeterminate</td>
-            <td>Selecteerd input elements that are in an indeterminate state</td>
+            <td>Selecteerd input elementen die zijn in een indeterminate state</td>
         </tr>
         <tr>
             <td>:invalid</td>
             <td>input:invalid</td>
-            <td>Selecteerd all input elements with an invalid value</td>
+            <td>Selecteerd all input elementen met een ongeldige waarde</td>
         </tr>
         <tr>
             <td>:lang(language)</td>
             <td>p:lang(it)</td>
-            <td>Selecteerd every &#60;p&#62; element with a lang attribute equal to "it" (Italian)</td>
+            <td>Selecteerd elke &#60;p&#62; element met een lang attribuut equal to "it" (Italian)</td>
         </tr>
         <tr>
             <td>:last-child</td>
             <td>p:last-child</td>
-            <td>Selecteerd every &#60;p&#62; element that is the last child of its parent</td>
+            <td>Selecteerd elke &#60;p&#62; element die de laaste child is van zijn parent</td>
         </tr>
         <tr>
             <td>:last-of-type</td>
             <td>p:last-of-type</td>
-            <td>Selecteerd every &#60;p&#62; element that is the last &#60;p&#62; element of its parent</td>
+            <td>Selecteerd elke &#60;p&#62; element die de laatste &#60;p&#62; element is van zijn parent</td>
         </tr>
         <tr>
             <td>:in-range</td>
             <td>input:in-range</td>
-            <td>Selecteerd input elements with a value within a specified range</td>
+            <td>Selecteerd input elementen met een waarde binnen een specifiek bereik</td>
         </tr>
         <tr>
             <td>:link</td>
             <td>a:link</td>
-            <td>Selecteerd all unvisited links</td>
+            <td>Selecteerd alle onbezochte links</td>
         </tr>
         <tr>
             <td>:not(selector)</td>
             <td>:not(p)</td>
-            <td>Selecteerd every element that is not a &#60;p&#62; element</td>
+            <td>Selecteerd elke element die niet een &#60;p&#62; element is</td>
         </tr>
         <tr>
             <td>:nth-child(n)</td>
             <td>p:nth-child(2)</td>
-            <td>Selecteerd every &#60;p&#62; element that is the second child of its parent</td>
+            <td>Selecteerd elke &#60;p&#62; element die is de tweede child van zijn parent</td>
         </tr>
         <tr>
             <td>:nth-last-child(n)</td>
             <td>p:nth-last-child(2)</td>
-            <td>Selecteerd every &#60;p&#62; element that is the second child of its parent, counting from the last
+            <td>Selecteerd elke &#60;p&#62; element die de tweede child is van zijn parent, counting from de last
                 child</td>
         </tr>
         <tr>
             <td>:nth-last-of-type(n)</td>
             <td>p:nth-last-of-type(2)</td>
-            <td>Selecteerd every &#60;p&#62; element that is the second &#60;p&#62; element of its parent, counting from
-                the last child</td>
+            <td>Selecteerd elke &#60;p&#62; element die de tweede &#60;p&#62; element is van zijn parent, counting from
+                de last child</td>
         </tr>
         <tr>
             <td>:nth-of-type(n)</td>
             <td>p:nth-of-type(2)</td>
-            <td>Selecteerd every &#60;p&#62; element that is the second &#60;p&#62; element of its parent</td>
+            <td>Selecteerd elke &#60;p&#62; element die de tweede &#60;p&#62; element is van zijn parent</td>
         </tr>
         <tr>
             <td>:only-of-type</td>
             <td>p:only-of-type</td>
-            <td>Selecteerd every &#60;p&#62; element that is the only &#60;p&#62; element of its parent</td>
+            <td>Selecteerd elke &#60;p&#62; element die de enige &#60;p&#62; element is van zijn parent</td>
         </tr>
         <tr>
             <td>:only-child</td>
             <td>p:only-child</td>
-            <td>Selecteerd every &#60;p&#62; element that is the only child of its parent</td>
+            <td>Selecteerd elke &#60;p&#62; element die de enige child is van zijn parent</td>
         </tr>
         <tr>
             <td>:optional</td>
             <td>input:optional</td>
-            <td>Selecteerd input elements with no "required" attribute</td>
+            <td>Selecteerd input elementen met no "required" attribuut</td>
         </tr>
         <tr>
             <td>:out-of-range</td>
             <td>input:out-of-range</td>
-            <td>Selecteerd input elements with a value outside a specified range</td>
+            <td>Selecteerd input elementen met een waarde outside a specified bereik</td>
         </tr>
         <tr>
             <td>::placeholder</td>
             <td>input::placeholder</td>
-            <td>Selecteerd input elements with the "placeholder" attribute specified</td>
+            <td>Selecteerd input elementen met de "placeholder" attribuut specified</td>
         </tr>
         <tr>
             <td>:read-only</td>
             <td>p:only-of-type</td>
-            <td>Selecteerd input elements with the "readonly" attribute specified</td>
+            <td>Selecteerd input elementen met "Alleen lezen" attribuut gespecificeerd</td>
         </tr>
         <tr>
             <td>:read-write</td>
             <td>input:read-only</td>
-            <td>Selecteerd input elements with the "readonly" attribute NOT specified</td>
+            <td>Selecteerd input elementen met "Alleen lezen" attribuut NIET gespecificeerd</td>
         </tr>
         <tr>
             <td>:required</td>
             <td>input:required</td>
-            <td>Selecteerd input elements with the "required" attribute specified</td>
+            <td>Selecteerd input elementen met de "verplichte" attribuut gespecificeerd</td>
         </tr>
         <tr>
             <td>:root</td>
             <td>:root</td>
-            <td>Selecteerd the document's root element</td>
+            <td>Selecteerd het document zijn root element</td>
         </tr>
         <tr>
             <td>::selection</td>
             <td>::selection</td>
-            <td>Selecteerd the portion of an element that is selected by a user</td>
+            <td>Selecteerd het deel van een element die is geselecteerd door een gebruiker</td>
         </tr>
         <tr>
             <td>:target</td>
             <td>#news:target</td>
-            <td>Selecteerd the current active #news element (clicked on a URL containing that anchor name)</td>
+            <td>Selecteerd het huidige actieve #news element (geklikt op een URL die de anchor naam bevat)</td>
         </tr>
         <tr>
             <td>:valid</td>
             <td>input:valid</td>
-            <td>Selecteerd all input elements with a valid value</td>
+            <td>Selecteerd alle input elementen met een geldige waarde</td>
         </tr>
         <tr>
             <td>:visited</td>
             <td>a:visited</td>
-            <td>Selecteerd all visited links</td>
+            <td>Selecteerd alle links die zijn bezocht</td>
         </tr>
     </table>
 

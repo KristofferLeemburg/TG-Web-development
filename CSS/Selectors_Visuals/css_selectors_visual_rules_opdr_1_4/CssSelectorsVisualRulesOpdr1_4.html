@@ -6,37 +6,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Selectors & Visual rules opdr 1 - 4</title>
   <link rel="icon" href="TechgroundsLogo.ico">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-
+  <div class="dropdown">
+    <button class="dropbtn">Selectors&Visuals</button>
+    <div class="dropdown-content">
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_1_4/CssSelectorsVisualRulesOpdr1_4.html">Opdracht
+        1/4</a>
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_1_4/Opdracht4.html">Opdracht 4</a>
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/CssSelectorsVisualRulesOpdr5_8.html">Opdracht
+        5/8</a>
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/CssSelectorsVisualRulesOpdr5_8.html">Child/Adjacent/General
+        Selectors</a>
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/AllSelectors.html">Alle Selectors</a>
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/Opdracht5.html">Opdracht 5</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Boxmodel</button>
+    <div class="dropdown-content">
+      <a href="/css/boxmodel/CssBoxmodelOpdr1_3.html">Opdracht 1/3</a>
+      <a href="/css/boxmodel/CssBoxmodelOpdr4_7.html">Opdracht 4/7</a>
+      <a href="/css/boxmodel/CssBoxmodelOpdr8_9.html">Opdracht 8/9</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Display&Positioning</button>
+    <div class="dropdown-content">
+      <a href="/css/display_positioning/CssDisplayPositioningOpdr1_4.html">Opdracht 1/4</a>
+      <a href="/css/display_positioning/CssDisplayPositioningOpdr5_8.html">Opdracht 5/8</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Psuedo Elements</button>
+    <div class="dropdown-content">
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Flexbox</button>
+    <div class="dropdown-content">
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Transitions</button>
+    <div class="dropdown-content">
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Responsive</button>
+    <div class="dropdown-content">
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Eindopdracht</button>
+    <div class="dropdown-content">
+    </div>
+  </div>
   <div>
     <h2><u>Opdracht 1. Je kunt op 3 verschillende manieren CSS in je HTML inladen. Op welke 3 manieren kun je dat
         doen? Leg ook voor elke wijze uit wat het precies inhoud.</u></h2>
     <p>
     <ol>
-      <li>External CSS</li>
+      <li><b>External CSS</b></li>
       <br>
       <ul>Met het external style sheet, kan je de stijl van een volledige website veranderen met slechts 1 file!
         Elke HTML pagina moet een referentie bevatten naar het externe stylesheet bestand in het &#60;link&#62; element,
         in de head sectie.
         Een externe style sheet kan geschreven worden in elke text editor en moet opgeslagen worden met een .css
         extentie.
-        Het externe css bestand mag geen HTML tags bevatten.
+        Het externe css bestand mag geen HTML tags bevatten. Er zijn geen style tags in het html document.
+        Het grote voordeel van een extern css bestand is dat je het meerdere keren kan gebruiken, Het .css bestand is
+        geen deel van een specifiek html document maar elke pagina kan het gebruiken.
       </ul>
       <br>
-      <li>Internal CSS</li>
+      <fieldset>
+        <legend>Voorbeeld</legend>
+        &#60;html&#62;<br>
+        &#60;head&#62;<br>
+        &#60;link rel="stylesheet" type="text/css" href="mystyle.css"&#62;&#60;/link&#62;<br>
+        &#60;/head&#62;<br>
+      </fieldset>
+      <br>
+      <li><b>Internal CSS</b></li>
       <br>
       <ul>Het internal style sheet mag gebruikt worden als slechts een enkele HTML pagina een unieke stijl heeft.
         De internal stijl is gedefinieerd binnen het &#60;style&#62; element, binnen-in de head section.
+        Door het style element te gebruiken kan je geen gebruik maken van een extern stylesheet.
       </ul>
       <br>
-      <li>Inline CSS</li>
+      <fieldset>
+        <legend>Voorbeeld</legend>
+        &#60;head&#62;<br>
+        &#60;style&#62;<br>
+        h1 &#123;<br>
+        color&#58; red&#59;<br>
+        margin-left&#58; 20px<br>
+        &#125;<br>
+        &#60;/style&#62;<br>
+        &#60;/head&#62;<br>
+      </fieldset>
+      <br>
+      <li><b>Inline CSS</b></li>
       <br>
       <ul>Een inline style mag gebruikt worden om een unieke stijl toe te passen voor een enkel element.
         Om inline stijlen toe te passen, voeg je de style attribute toe aan het relevante element.
         De style attrribute kan elke CSS property bevatten.
       </ul>
+      <br>
+      <fieldset>
+        <legend>Voorbeeld</legend>
+        &#60;h1 style="color&#58;blue&#59;text-align&#58;center&#59;"&#62;This is a heading&#60;/h1&#62;<br>
+      </fieldset>
       <br>
     </ol>
     </p>
@@ -53,34 +135,43 @@
       van
       gevalideerde values, gedefinieerd door abc taal, met ook een sematic betekenis, geimplementeerd door de browser.
     </p>
-    <h5>Voorbeeld.</h5>
-    <p>Background-color&#58;red dan is background-color de property en red de value en de colon scheid de twee</p>
+    <fieldset>
+      <legend>Voorbeeld</legend>
+      Background-color&#58;red dan is background-color de property en red de value en de colon scheid de twee<br>
+    </fieldset>
+    <br>
   </div>
   <hr>
   <div>
     <h2><u>Opdracht 3. Er zijn verschillende selectors, bijvoorbeeld;</u></h2>
-    <ul>
+    <ol>
       <li>type selectors</li>
       <li>descendant selectors</li>
       <li>class selectors</li>
-    </ul>
+    </ol>
     <h3><u>Maak van de bovengenoemde selectors voorbeelden. Geef in je antwoord ook aan wat de
         voordelen zijn van elke selector.</u></h3>
-    <h4>type selectors:</h4>
-    <p>The CSS type selector matches elements by node name. In other words, it selects all elements of the given type
-      within a document.</p>
-    <br>
-    <h4>descendant selectors:</h4>
-    <p>The descendant selector matches all elements that are descendants of a specified element. The first simple
-      selector within this selector represents the ancestor element—a structurally superior element, such as a parent
-      element, or the parent of a parent element, and so on. The second simple selector represents the descendant
-      element we’re trying to match.
-      The combinator we use in a descendant selector is a whitespace character: a space, horizontal tab, carriage
-      return, line feed, or form feed. Since whitespace characters are allowed around all combinators, you can include
-      more than one whitespace character between the simple selectors in a descendant selector.</p>
-    <br>
-    <h4>class selectors:</h4>
-    <p>The CSS class selector matches elements based on the contents of their class attribute.</p>
+    <ol>
+      <li><b>type selectors:</b></li>
+      <br>
+      <ul>De type selector komt overeen met elementen op nodename. Met andere woorden, het selecteert alle elementen van het gegeven type
+        binnen een document.</ul>
+      <br>
+      <li><b>descendant selectors:</b></li>
+      <br>
+      <ul>De descendant selector komt overeen met alle elementen die afstammelingen zijn van een opgegeven element. De eerste eenvoudige
+        selector binnen deze selector vertegenwoordigt het voorouderelement - een structureel superieur element, zoals een parent
+        element, of het bovenliggende element van een bovenliggend element, enzovoort. De tweede eenvoudige selector vertegenwoordigt de afstammeling
+        element dat we proberen te matchen.
+        De combinator die we gebruiken in een afstammende selector is een witruimteteken: een spatie, horizontale tab, return, line feed of form feed. 
+        Aangezien witruimte-tekens zijn toegestaan ​​rond alle combinatoren, kunt u meer dan één witruimteteken tussen de eenvoudige selectors in een afstammende selector.</p></ul>
+      <br>
+      <li><b>class selectors:</b></li>
+      <br>
+      <ul>De class selector 
+        komt overeen met elementen op basis van de inhoud van hun class attribuut.</ul>
+      <br>
+    </ol>
   </div>
   <hr>
   <div>

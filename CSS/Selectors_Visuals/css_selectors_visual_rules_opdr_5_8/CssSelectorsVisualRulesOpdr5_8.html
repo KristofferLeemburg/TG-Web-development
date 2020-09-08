@@ -6,10 +6,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Selectors & Visual rules opdr 5 - 8</title>
   <link rel="icon" href="TechgroundsLogo.ico">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-
+  <div class="dropdown">
+    <button class="dropbtn">Selectors&Visuals</button>
+    <div class="dropdown-content">
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_1_4/CssSelectorsVisualRulesOpdr1_4.html">Opdracht
+        1/4</a>
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_1_4/Opdracht4.html">Opdracht 4</a>
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/CssSelectorsVisualRulesOpdr5_8.html">Opdracht
+        5/8</a>
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/CssSelectorsVisualRulesOpdr5_8.html">Child/Adjacent/General
+        Selectors</a>
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/AllSelectors.html">Alle Selectors</a>
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/Opdracht5.html">Opdracht 5</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Boxmodel</button>
+    <div class="dropdown-content">
+      <a href="/css/boxmodel/CssBoxmodelOpdr1_3.html">Opdracht 1/3</a>
+      <a href="/css/boxmodel/CssBoxmodelOpdr4_7.html">Opdracht 4/7</a>
+      <a href="/css/boxmodel/CssBoxmodelOpdr8_9.html">Opdracht 8/9</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Display&Positioning</button>
+    <div class="dropdown-content">
+      <a href="/css/display_positioning/CssDisplayPositioningOpdr1_4.html">Opdracht 1/4</a>
+      <a href="/css/display_positioning/CssDisplayPositioningOpdr5_8.html">Opdracht 5/8</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Psuedo Elements</button>
+    <div class="dropdown-content">
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Flexbox</button>
+    <div class="dropdown-content">
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Transitions</button>
+    <div class="dropdown-content">
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Responsive</button>
+    <div class="dropdown-content">
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Eindopdracht</button>
+    <div class="dropdown-content">
+    </div>
+  </div>
   <div>
     <h2><u>Opdracht 5. Maak een aparte html bestand en voeg de volgende code toe:</u></h2>
     <p><a href="Opdracht5.html">Opdracht 5</a></p>
@@ -25,49 +79,55 @@
     <h3><u>Maak in een aparte html bestand voor elke selector een voorbeeld en maak een link in je
         antwoord naar dat html bestand. Geef in je antwoord ook aan wat de voordelen zijn van elk
         selector.</u></h3>
-    <h4>Child selector.</h4>
-    <p>Child Selector: Child Selector is used to match all the elements which are child of a specified element.
-      It gives the relation between two elements. The element &#62; element selector selects those elements which are
-      the
-      children of specific parent.
-      ... Example: Match all
-      &#60;h2&#62; element that are child of only &#60;div&#62; element.</p>
+    <ul>
+      <li><b>Child selector.</b></li>
+      <ul>Child Selector: Child Selector wordt gebruikt om alle elementen te matchen die child zijn van een gespecificeerd element.
+        Het geeft de relatie weer tussen twee elementen. Het element &#62; element selector selecteert die elementen die zijn
+        de children van een specifieke parent.
+      </ul>
+      <br>
+      <li><b>General selector.</b></li>
+      <ul>General sibling is een weinig bekende maar zeer nuttige CSS-selector.
+        Het maakt de styling mogelijk van een element dat een broer of zus is van een ander.
+      </ul>
+        <br>
+        <ul>
+        <fieldset>
+          <legend>Voorbeeld</legend>
+          <h5>Syntax:</h5>
+          h2 &#126; p &#123;
+          color&#58; red&#59;
+          &#125;
+        </fieldset>
+        </ul>
+        <br>
+        <ul>The general sibling selector is part of de family of combinator selectors in CSS and is identified with de tilde
+          ~
+          character. It looks a bit like this:
+          In that example, you would be selecting all paragraphs in een article that come after de featured image (een
+          element
+          met een class name of “featured-image”) and making them of slightly smaller font-size.
+  
+          This selects elements at de same hierarchy level. In this example .featured-image and de p elements zijn at de
+          same hierarchy. If de selector continued past de p or before .featured-image, de normal rules apply. So
+          .featured-image ~ p span still would select spans that zijn descendents of whatever .featured-image ~ p matches.
+  
+          The spec for selectors level 4 calls these</ul>
+      <br>
+      <li><b>Adjacent selector.</b></li>
+      <ul>Een adjacent sibling combinator selector geeft je de mogelijkheid om een element te selecteren die direct na
+        een
+        ander specifiek element komt.
+        Deze selectors kunnen je helpen om je stijl toe te passen in een contextuele manier. Mischien dat je een aantal
+        artikelen hebt op je website.
+        En de meeste van deze artikelen starten met &#60;p&#62; elements en het ziet er goed uit. Maar sommige van deze
+        artikelen starten met &#60;ul&#62;, welke een boven en onder
+        een margin hebben om er goed uit te zien met een artikel. Maar wanneer je een artikel begint je een grote lege
+        ruimte hebt.
+        Dan zal de latere selector erboven de margin erboven weghalen wanneer je een nieuw artikel begint.</ul>
+      <br>
+    </ul>
 
-
-
-    <h4>General selector.</h4>
-    <p>General sibling is a little known but very useful CSS selector.
-      It allows the styling of an element that is a sibling of another.
-      We’ll look at the syntax, a practical example and then a quick round up of the other child and sibling selectors
-      in CSS.
-    <h5>Syntax:</h5>
-    h2 &#126; p &#123;
-    color&#58; red&#59;
-    &#125;
-    <br>
-    <br>
-    The general sibling selector is part of the family of combinator selectors in CSS and is identified with the tilde ~
-    character. It looks a bit like this:
-    In that example, you would be selecting all paragraphs in an article that come after the featured image (an element
-    with a class name of “featured-image”) and making them of slightly smaller font-size.
-
-    This selects elements at the same hierarchy level. In this example .featured-image and the p elements are at the
-    same hierarchy. If the selector continued past the p or before .featured-image, the normal rules apply. So
-    .featured-image ~ p span still would select spans that are descendents of whatever .featured-image ~ p matches.
-
-    The spec for selectors level 4 calls these</p>
-
-    <h4>Adjacent selector.</h4>
-    <p>Een adjacent sibling combinator selector geeft je de mogelijkheid om een element te selecteren die direct na een
-      ander specifiek element komt.
-      Deze selectors kunnen je helpen om je stijl toe te passen in een contextuele manier. Mischien dat je een aantal
-      artikelen hebt op je website.
-      En de meeste van deze artikelen starten met &#60;p&#62; elements en het ziet er goed uit. Maar sommige van deze
-      artikelen starten met &#60;ul&#62;, welke een boven en onder
-      een margin hebben om er goed uit te zien met een artikel. Maar wanneer je een artikel begint je een grote lege
-      ruimte hebt.
-      Dan zal de latere selector erboven de margin erboven weghalen wanneer je een nieuw artikel begint.
-    </p>
     <p><a href="ChildAdjacentGeneralSelectors.html">Selectors</a></p>
   </div>
   <hr>
