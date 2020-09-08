@@ -1,150 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Display & Positioning Opdr 5 - 8</title>
-    <link rel="icon" href="TechgroundsLogo.ico" />
-    <link rel="stylesheet" href="stylesheet.css" />
-  </head>
 
-  <body>
-    <div class="dropdown">
-      <button class="dropbtn">Selectors&Visuals</button>
-      <div class="dropdown-content">
-        <a
-          href="/css/selectors_visuals/css_selectors_visual_rules_opdr_1_4/CssSelectorsVisualRulesOpdr1_4.html"
-          >Opdracht 1/4</a
-        >
-        <a
-          href="/css/selectors_visuals/css_selectors_visual_rules_opdr_1_4/Opdracht4.html"
-          >Opdracht 4</a
-        >
-        <a
-          href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/CssSelectorsVisualRulesOpdr5_8.html"
-          >Opdracht 5/8</a
-        >
-        <a
-          href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/CssSelectorsVisualRulesOpdr5_8.html"
-          >Child/Adjacent/General Selectors</a
-        >
-        <a
-          href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/AllSelectors.html"
-          >Alle Selectors</a
-        >
-        <a
-          href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/Opdracht5.html"
-          >Opdracht 5</a
-        >
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Display & Positioning Opdr 5 - 8</title>
+  <link rel="icon" href="TechgroundsLogo.ico" />
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body>
+  <div class="dropdown">
+    <button class="dropbtn">Selectors&Visuals</button>
+    <div class="dropdown-content">
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_1_4/CssSelectorsVisualRulesOpdr1_4.html">Opdracht
+        1/4</a>
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_1_4/Opdracht4.html">Opdracht 4</a>
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/CssSelectorsVisualRulesOpdr5_8.html">Opdracht
+        5/8</a>
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/CssSelectorsVisualRulesOpdr5_8.html">Child/Adjacent/General
+        Selectors</a>
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/AllSelectors.html">Alle Selectors</a>
+      <a href="/css/selectors_visuals/css_selectors_visual_rules_opdr_5_8/Opdracht5.html">Opdracht 5</a>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn">Boxmodel</button>
-      <div class="dropdown-content">
-        <a href="/css/boxmodel/CssBoxmodelOpdr1_3.html">Opdracht 1/3</a>
-        <a href="/css/boxmodel/CssBoxmodelOpdr4_7.html">Opdracht 4/7</a>
-        <a href="/css/boxmodel/CssBoxmodelOpdr8_9.html">Opdracht 8/9</a>
-      </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Boxmodel</button>
+    <div class="dropdown-content">
+      <a href="/css/boxmodel/CssBoxmodelOpdr1_3.html">Opdracht 1/3</a>
+      <a href="/css/boxmodel/CssBoxmodelOpdr4_7.html">Opdracht 4/7</a>
+      <a href="/css/boxmodel/CssBoxmodelOpdr8_9.html">Opdracht 8/9</a>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn">Display&Positioning</button>
-      <div class="dropdown-content">
-        <a href="/css/display_positioning/CssDisplayPositioningOpdr1_4.html"
-          >Opdracht 1/4</a
-        >
-        <a href="/css/display_positioning/CssDisplayPositioningOpdr5_8.html"
-          >Opdracht 5/8</a
-        >
-      </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Display&Positioning</button>
+    <div class="dropdown-content">
+      <a href="/css/display_positioning/CssDisplayPositioningOpdr1_4.html">Opdracht 1/4</a>
+      <a href="/css/display_positioning/CssDisplayPositioningOpdr5_8.html">Opdracht 5/8</a>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn">Psuedo Elements</button>
-      <div class="dropdown-content"></div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Psuedo Elements</button>
+    <div class="dropdown-content"></div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Flexbox</button>
+    <div class="dropdown-content"></div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Transitions</button>
+    <div class="dropdown-content"></div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Responsive</button>
+    <div class="dropdown-content"></div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Eindopdracht</button>
+    <div class="dropdown-content"></div>
+  </div>
+  <div>
+    <h2>
+      <u>Opdracht 5. Positioneer het &lt;img&gt; element achter de tekst. Zie
+        voorbeeld hieronder en gebruik onderstaande HTML code. Je mag zelf een
+        eigen image gebruiken.</u>
+    </h2>
+    <fieldset>
+      <legend>Voorbeeld</legend>
+      &#60;style&#62;<br>
+      .container &#123;<br>
+      position: relative;<br>
+      &#125;<br>
+      .text-block &#123;<br>
+      position: absolute;<br>
+      top: 180px;<br>
+      left: 700px;<br>
+      &#125;<br>
+      &#60;/style&#62;<br>
+      &#60;/head&#62;<br>
+      <br>
+      &#60;body&#62;<br>
+      &#60;div class="container"&#62;&#60;img src="Kristoffer.jpg" /&#62;<br>
+      &#60;div class="text-block"&#62;<br>
+      &#60;h1&#62;Dit is een titel&#60;/h1&#62;<br>
+      &#60;p&#62;Dit is een paragraaf.&#60;/p&#62;<br>
+      &#60;p&#62;Dit is nog een paragraaf.&#60;/p&#62;<br>
+      &#60;/div&#62;<br>
+      &#60;/div&#62;<br>
+      &#60;/body&#62;<br>
+    </fieldset>
+    <br>
+    <a href="Opdracht5.html">Opdracht 5</a>
+    <br>
+  </div>
+  <hr>
+  <div>
+    <h2>
+      <u>Opdracht 6. Maak het onderstaande na door gebruik te maken van
+        relative position. De outer div block is 100px breed en 100px hoog. De
+        inner div block is 50px breed en 50px hoog.</u>
+    </h2>
+    <br>
+    <div class="box" id="one"></div>
+    <div class="box" id="two"></div>
+  </div>
+  <hr>
+  <div style="width: 900 px;">
+    <h2>
+      <u>Opdracht 7. Opdracht 7 Zie de onderstaande image met tekst. Kun jij
+        dit namaken? Gebruik zelf een foto van een zonnige bestemming. Gebruik
+        position, maar je mag geen z-index toepassen.</u>
+    </h2>
+    <div class="container">
+      <img src="greece.png" alt="Greece" style="width:100%;">
+      <div class="zwartetekst">Groeten uit</div>
+      <div class="wittetekst">Griekenland</div>
+      <div class="blauwetekst">Kom je hier ook vakantie vieren?</div>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn">Flexbox</button>
-      <div class="dropdown-content"></div>
+  </div>
+  <hr>
+  <div style="width: 900 px;">
+    <h2>
+      <u>Opdracht 8. Maak het onderstaande na. Je mag zelf een image zoeken en
+        gebruiken.</u>
+    </h2>
+    <div class="container">
+      <img src="valthorens.png" alt="Greece" style="width: 100%;">
+      <div class="gelebalk">Brrrrrr....</div>
+      <div class="wittebalk">Super koud hier zeg!</div>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn">Transitions</button>
-      <div class="dropdown-content"></div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Responsive</button>
-      <div class="dropdown-content"></div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Eindopdracht</button>
-      <div class="dropdown-content"></div>
-    </div>
-    <div>
-      <h2>
-        <u
-          >Opdracht 5. Positioneer het &lt;img&gt; element achter de tekst. Zie
-          voorbeeld hieronder en gebruik onderstaande HTML code. Je mag zelf een
-          eigen image gebruiken.</u
-        >
-      </h2>
-      <fieldset>
-        <legend>Voorbeeld</legend>
-        &#60;style&#62;<br />
-        .container &#123;<br />
-        position: relative;<br />
-        &#125;<br />
-        .text-block &#123;<br />
-        position: absolute;<br />
-        top: 180px;<br />
-        left: 700px;<br />
-        &#125;<br />
-        &#60;/style&#62;<br />
-        &#60;/head&#62;<br />
-        <br />
-        &#60;body&#62;<br />
-        &#60;div class="container"&#62;&#60;img src="Kristoffer.jpg" /&#62;<br />
-        &#60;div class="text-block"&#62;<br />
-        &#60;h1&#62;Dit is een titel&#60;/h1&#62;<br />
-        &#60;p&#62;Dit is een paragraaf.&#60;/p&#62;<br />
-        &#60;p&#62;Dit is nog een paragraaf.&#60;/p&#62;<br />
-        &#60;/div&#62;<br />
-        &#60;/div&#62;<br />
-        &#60;/body&#62;<br />
-      </fieldset>
-      <br />
-      <a href="Opdracht5.html">Opdracht 5</a>
-      <br />
-    </div>
-    <hr />
-    <div>
-      <h2>
-        <u
-          >Opdracht 6. Maak het onderstaande na door gebruik te maken van
-          relative position. De outer div block is 100px breed en 100px hoog. De
-          inner div block is 50px breed en 50px hoog.</u
-        >
-      </h2>
-      <p></p>
-    </div>
-    <hr />
-    <div>
-      <h2>
-        <u
-          >Opdracht 7. Opdracht 7 Zie de onderstaande image met tekst. Kun jij
-          dit namaken? Gebruik zelf een foto van een zonnige bestemming. Gebruik
-          position, maar je mag geen z-index toepassen.</u
-        >
-      </h2>
-      <p></p>
-    </div>
-    <hr />
-    <div>
-      <h2>
-        <u
-          >Opdracht 8. Maak het onderstaande na. Je mag zelf een image zoeken en
-          gebruiken.</u
-        >
-      </h2>
-      <p></p>
-    </div>
-    <hr />
-  </body>
+  </div>
+  <hr>
+</body>
+
 </html>
