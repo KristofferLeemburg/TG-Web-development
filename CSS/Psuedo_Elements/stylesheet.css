@@ -1,3 +1,6 @@
+body {
+  font-family: "Inconsolata", monospace;
+}
 .dropbtn {
   background-color: #459dcf;
   color: black;
@@ -38,13 +41,14 @@
   position: relative;
   width: 600px;
   height: 67px;
-  font-size: 30px;
+
   background-color: rgb(40, 175, 168);
+  font-size: 30px;
   color: white;
+  text-align: center;
   margin-top: 50px;
   margin-left: 20px;
   margin-bottom: 50px;
-  text-align: center;
 }
 .button::before {
   content: "";
@@ -59,7 +63,7 @@
 .button::after {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
   border-right:3px solid orange;
   border-bottom:3px solid orange;
@@ -71,20 +75,22 @@
   position: relative;
   height: 400px;
   width: 400px;
-  color: black;
   border: 2px solid black;
-  margin-left: 10%;
+  /* margin-left: 10%;
   margin-top: 1%;
-  margin-bottom: 5%;
+  margin-bottom: 5%; */
 }
 .roodborstje::before {
   background-image: url(/css/images/roodborstje.jpg);
   content: "";
   position: absolute;
+
   width: 400px;
   height: 400px;
+
   z-index: -1;
 }
+
 .Dodecagon {
   background: #459dcf;
   width: 180px;
