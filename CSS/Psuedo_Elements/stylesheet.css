@@ -41,8 +41,7 @@ body {
   position: relative;
   width: 600px;
   height: 67px;
-
-  background-color: rgb(40, 175, 168);
+  background-color: #459dcf;
   font-size: 30px;
   color: white;
   text-align: center;
@@ -76,18 +75,16 @@ body {
   height: 400px;
   width: 400px;
   border: 2px solid black;
-  /* margin-left: 10%;
+  margin-left: 10%;
   margin-top: 1%;
-  margin-bottom: 5%; */
+  margin-bottom: 5%;
 }
 .roodborstje::before {
   background-image: url(/css/images/roodborstje.jpg);
   content: "";
   position: absolute;
-
   width: 400px;
   height: 400px;
-
   z-index: -1;
 }
 
@@ -126,7 +123,7 @@ body {
   height: 200px;
   font-size: 30px;
   text-align: center;
-  background: black;
+  background: #459dcf;
   border-radius: 50%;
   position: relative;
   margin-left: 240px;
@@ -143,7 +140,7 @@ top: 50px;
 left: -50px;
 width: 100px;
 height: 100px;
-background:black;
+background:#459dcf;
 border-radius: 50%;
 }
 
@@ -156,7 +153,7 @@ top: 50px;
 right: -50px;
 width: 100px;
 height: 100px;
-background: black;
+background: #459dcf;
 border-radius: 50%;
 }
 
@@ -165,7 +162,7 @@ border-radius: 50%;
   height: 200px;
   font-size: 30px;
   text-align: center;
-  background: black;
+  background: #459dcf;
   border-radius: 50%;
   position: relative;
   margin-left: 240px;
@@ -182,7 +179,7 @@ top: 50px;
 left: -50px;
 width: 100px;
 height: 100px;
-background:black;
+background:#459dcf;
 border-radius: 50%;
 }
 
@@ -195,7 +192,7 @@ top: 50px;
 right: -50px;
 width: 100px;
 height: 100px;
-background: black;
+background: #459dcf;
 border-radius: 50%;
 }
 .circle3 {
@@ -203,7 +200,7 @@ border-radius: 50%;
   height: 200px;
   font-size: 30px;
   text-align: center;
-  background: black;
+  background: #459dcf;
   border-radius: 50%;
   position: relative;
   margin-left: 240px;
@@ -220,7 +217,7 @@ top: 50px;
 left: -50px;
 width: 100px;
 height: 100px;
-background:black;
+background:#459dcf;
 border-radius: 50%;
 }
 
@@ -233,7 +230,7 @@ top: 50px;
 right: -50px;
 width: 100px;
 height: 100px;
-background: black;
+background: #459dcf;
 border-radius: 50%;
 }
 
