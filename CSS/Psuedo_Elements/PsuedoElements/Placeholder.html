@@ -2,11 +2,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Display & Positioning Opdr 5 - 8</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>::placeholder</title>
   <link rel="icon" href="/css/images/TechgroundsLogo.ico" />
   <link rel="stylesheet" href="stylesheet.css" />
+  <style>
+    input::placeholder {
+      color: red;
+      font-size: 16px;
+      font-style: italic;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -71,79 +79,7 @@
         </div>
     </ul>
 </nav>
-  <div>
-    <h2>
-      <u>Opdracht 5. Positioneer het &lt;img&gt; element achter de tekst. Zie
-        voorbeeld hieronder en gebruik onderstaande HTML code. Je mag zelf een
-        eigen image gebruiken.</u>
-    </h2>
-    <fieldset>
-      <legend>Voorbeeld</legend>
-      &#60;style&#62;<br>
-      .container &#123;<br>
-      position: relative;<br>
-      &#125;<br>
-      .text-block &#123;<br>
-      position: absolute;<br>
-      top: 180px;<br>
-      left: 700px;<br>
-      &#125;<br>
-      &#60;/style&#62;<br>
-      &#60;/head&#62;<br>
-      <br>
-      &#60;body&#62;<br>
-      &#60;div class="container"&#62;&#60;img src="Kristoffer.jpg" /&#62;<br>
-      &#60;div class="text-block"&#62;<br>
-      &#60;h1&#62;Dit is een titel&#60;/h1&#62;<br>
-      &#60;p&#62;Dit is een paragraaf.&#60;/p&#62;<br>
-      &#60;p&#62;Dit is nog een paragraaf.&#60;/p&#62;<br>
-      &#60;/div&#62;<br>
-      &#60;/div&#62;<br>
-      &#60;/body&#62;<br>
-    </fieldset>
-    <br>
-    <a href="Opdracht5.html">Opdracht 5</a>
-    <br>
-  </div>
-  <hr>
-  <div>
-    <h2>
-      <u>Opdracht 6. Maak het onderstaande na door gebruik te maken van
-        relative position. De outer div block is 100px breed en 100px hoog. De
-        inner div block is 50px breed en 50px hoog.</u>
-    </h2>
-    <br>
-    <div class="box" id="one"></div>
-    <div class="box" id="two"></div>
-  </div>
-  <hr>
-  <div style="width: 900 px;">
-    <h2>
-      <u>Opdracht 7. Opdracht 7 Zie de onderstaande image met tekst. Kun jij
-        dit namaken? Gebruik zelf een foto van een zonnige bestemming. Gebruik
-        position, maar je mag geen z-index toepassen.</u>
-    </h2>
-    <div class="container">
-      <img src="/css/images/greece.png" alt="Greece" style="width:100%;">
-      <div class="zwartetekst">Groeten uit</div>
-      <div class="wittetekst">Griekenland</div>
-      <div class="blauwetekst">Kom je hier ook vakantie vieren?</div>
-    </div>
-  </div>
-  <hr>
-  <div style="width: 900 px;">
-    <h2>
-      <u>Opdracht 8. Maak het onderstaande na. Je mag zelf een image zoeken en
-        gebruiken.</u>
-    </h2>
-    <div class="container">
-      <img src="/css/images/valthorens.png" alt="Greece" style="width: 100%;">
-      <div class="gelebalk">Brrrrrr....</div>
-      <div class="gelebalk2">..</div>
-      <div class="wittebalk">Super koud hier zeg!</div>
-    </div>
-  </div>
-  <hr>
+  <input size="40" ; placeholder="Type iets hier!">
 </body>
 
 </html>

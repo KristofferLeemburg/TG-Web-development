@@ -1,3 +1,5 @@
+
+
 .dropbtn {
   background-color: #459dcf;
   color: black;
@@ -88,6 +90,16 @@
   top: 80px;
   left: 30px;
   color: black;
+  background-color: yellow;
+  padding-left: 200px;
+  padding-right: 600px;
+}
+.gelebalk2 {
+  position: absolute;
+  top: 80px;
+  left: 600px;
+  z-index: -1;
+  color: yellow;
   background-color: yellow;
   padding-left: 200px;
   padding-right: 600px;
