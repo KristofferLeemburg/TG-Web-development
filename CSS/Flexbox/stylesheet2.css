@@ -37,15 +37,13 @@
 .item6 {
   background: linear-gradient(to right, rgb(231, 87, 231), white);
 }
-.container {
+.parent {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: rgb(221, 217, 217);
- 
-  
+  background: rgb(221, 217, 217); 
 }
-.game {
+.child {
   position: relative;
   width: 200px;
   height: 520px;
