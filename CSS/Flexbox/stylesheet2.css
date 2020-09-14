@@ -1,0 +1,82 @@
+.flexbox-top {
+  display: flex;
+  justify-content: center;
+}
+.flexbox-bottom {
+  display: flex;
+  justify-content: center;
+}
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6 {
+  padding: 80px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.item1 {
+  background: rgb(228, 224, 175);
+}
+.item2 {
+  background: rgb(96, 191, 219);
+}
+.item3 {
+  background: rgb(96, 219, 157);
+}
+.item4 {
+  background: rgb(255, 255, 255);
+}
+.item5 {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.item6 {
+  background: linear-gradient(to right, rgb(231, 87, 231), white);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: rgb(221, 217, 217);
+ 
+  
+}
+.game {
+  position: relative;
+  width: 200px;
+  height: 520px;
+  text-align: center;
+  margin: 15px;
+  width: 200px;
+  background-color: white;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
+h2 {
+  color: rgb(0, 153, 255);
+  margin: 10px;
+}
+.mariobutton {
+  position: absolute;
+  color: white;
+  background-color: rgb(0, 153, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 200px;
+}
+.mariobutton:hover {
+  background-color: rgb(3, 88, 145);
+}
+.mariobutton:active {
+  background-color: rgb(110, 195, 252);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
