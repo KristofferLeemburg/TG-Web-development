@@ -11,25 +11,25 @@
   justify-content: center;
 }
 .block {
-  height: 290px;
+  position: relative;
+  height: 365px;
   width: 800px;
   margin: 50px;
   border: 1px solid black;
   background-color: rgb(201, 201, 201);
 }
 .item {
-  position: relative;
-  right: 350px;
-  height: 50px;
-  width: 50px;
+  position: absolute;
+  right: 741px;
+  top: 0;
+  padding: 25px;
   margin: 5px auto;
-  text-align: center;
   border: 1px solid black;
   background-color: white;
   transition: right 3s, background-color 3s, border-radius 3s;
 }
 .block:hover .item {
-  right: -350px;
+  right: -0px;
   background-color: #a0cae2;
 }
 .block:hover #item1 {
@@ -40,14 +40,21 @@
   color: black;
 }
 #item2 {
+  top: 0px;
+}
+#item2 {
+  top: 70px;
   transition-timing-function: ease-in;
 }
 #item3 {
+  top: 140px;
   transition-timing-function: ease-out;
 }
 #item4 {
+  top: 210px;
   transition-timing-function: ease-in-out;
 }
 #item5 {
+  top: 280px;
   transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
 }
