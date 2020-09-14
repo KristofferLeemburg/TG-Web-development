@@ -52,8 +52,8 @@ body {
 .button::before {
   content: "";
   position: absolute;
-  border-left:3px solid orange;
-  border-top:3px solid orange;
+  border-left: 3px solid orange;
+  border-top: 3px solid orange;
   top: 0;
   left: 0;
   width: 60px;
@@ -64,8 +64,8 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  border-right:3px solid orange;
-  border-bottom:3px solid orange;
+  border-right: 3px solid orange;
+  border-bottom: 3px solid orange;
   width: 60px;
   height: 60px;
 }
@@ -83,8 +83,11 @@ body {
   background-image: url(/css/images/roodborstje.jpg);
   content: "";
   position: absolute;
-  width: 400px;
-  height: 400px;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   z-index: -1;
 }
 
@@ -117,8 +120,8 @@ body {
   width: 180px;
   background: #459dcf;
 }
-
-.circle1 {
+.circle1,.circle2,.circle3
+ {
   width: 200px;
   height: 200px;
   font-size: 30px;
@@ -130,110 +133,31 @@ body {
   margin-top: 10px;
   color: white;
 }
-
-.circle1:before
-{
-content: ".";
-font-size: 40px;
-position: absolute;
-top: 50px;
-left: -50px;
-width: 100px;
-height: 100px;
-background:#459dcf;
-border-radius: 50%;
-}
-
-.circle1:after
-{
-content: ".";
-font-size: 40px;
-position: absolute;
-top: 50px;
-right: -50px;
-width: 100px;
-height: 100px;
-background: #459dcf;
-border-radius: 50%;
-}
-
-.circle2 {
-  width: 200px;
-  height: 200px;
-  font-size: 30px;
-  text-align: center;
+.circle1:before,.circle2:before,.circle3:before
+ {
+  width: 100px;
+  height: 100px;
+  content: ".";
+  font-size: 40px;
+  position: absolute;
+  top: 50px;
+  left: -50px;
   background: #459dcf;
   border-radius: 50%;
-  position: relative;
-  margin-left: 240px;
-  margin-top: 10px;
-  color: white;
+  
 }
-
-.circle2:before
-{
-content: ".";
-font-size: 40px;
-position: absolute;
-top: 50px;
-left: -50px;
-width: 100px;
-height: 100px;
-background:#459dcf;
-border-radius: 50%;
-}
-
-.circle2:after
-{
-content: ".";
-font-size: 40px;
-position: absolute;
-top: 50px;
-right: -50px;
-width: 100px;
-height: 100px;
-background: #459dcf;
-border-radius: 50%;
-}
-.circle3 {
-  width: 200px;
-  height: 200px;
-  font-size: 30px;
-  text-align: center;
+.circle1:after,.circle2:after,.circle3:after {
+  content: ".";
+  font-size: 40px;
+  position: absolute;
+  top: 50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
   background: #459dcf;
   border-radius: 50%;
-  position: relative;
-  margin-left: 240px;
-  margin-top: 10px;
-  color: white;
+  
 }
-
-.circle3:before
-{
-content: ".";
-font-size: 40px;
-position: absolute;
-top: 50px;
-left: -50px;
-width: 100px;
-height: 100px;
-background:#459dcf;
-border-radius: 50%;
-}
-
-.circle3:after
-{
-content: ".";
-font-size: 40px;
-position: absolute;
-top: 50px;
-right: -50px;
-width: 100px;
-height: 100px;
-background: #459dcf;
-border-radius: 50%;
-}
-
-.centerp{
-  padding-top: 70px ;
+.centerp {
+  padding-top: 70px;
 }
