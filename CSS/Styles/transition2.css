@@ -1,50 +1,166 @@
 .container {
-    display: flex;
-    justify-content: center;
+  display: inline-block;
+  position: relative;
+  width: 620px;
+  height: 300px;
+  margin-left: 50px;
 }
+.container5 {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
+.container6 {
+  position: relative;
+}
+
 .block {
-    position: relative;
-    height: 290px;
-    width: 800px;
-    border: 1px solid black;
-    background-color: rgb(201, 201, 201);
+  position: absolute;
+  height: 290px;
+  width: 800px;
+  border: 1px solid black;
+  background-color: rgb(201, 201, 201);
 }
 .item {
-    position: absolute;
-    top: 105px;
-    left: 375px;
-    padding: 25px;
-    text-align: center;
-    border: 1px solid black;
-    opacity: 1;
-    transition: right 2s, left 2s, top 2s, bottom 2s;
+  position: absolute;
+  top: 105px;
+  left: 375px;
+  padding: 25px;
+  text-align: center;
+  border: 1px solid black;
+  opacity: 1;
+  transition: right 2s, left 2s, top 2s, bottom 2s;
 }
 .block:hover #item1 {
-    top: -1px;
-    margin-left: 366px;
+  top: -1px;
+  margin-left: 366px;
 }
 .block:hover #item2 {
-    left: 374px;
-    top: -1px;
-    margin-left: -375px;
+  left: 374px;
+  top: -1px;
+  margin-left: -375px;
 }
 .block:hover #item3 {
-    left: 374px;
-    top: 221px;
-    margin-left: -375px;
+  left: 374px;
+  top: 221px;
+  margin-left: -375px;
 }
 #item1 {
-    transition-property: margin-left , top, right;
-    transition-duration: 1s, 1s;
-    transition-timing-function: ease-in, ease;
+  transition-property: margin-left, top, right;
+  transition-duration: 1s, 1s;
+  transition-timing-function: ease-in, ease;
 }
 #item2 {
-    transition-property: margin-left , top, right;
-    transition-duration: 1s, 1s;
-    transition-timing-function: ease-in, ease;
+  transition-property: margin-left, top, right;
+  transition-duration: 1s, 1s;
+  transition-timing-function: ease-in, ease;
 }
 #item3 {
-    transition-property: top, margin-left , left;
-    transition-duration: 2s, 0.5s;
-    transition-timing-function: ease-in, ease-out;
+  transition-property: top, margin-left, left;
+  transition-duration: 2s, 0.5s;
+  transition-timing-function: ease-in, ease-out;
+}
+.box {
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 500px;
+  border: 1px solid black;
+  background: rgb(255, 219, 12);
+  /* z-index: -1; */
+  margin-left: 50px;
+}
+
+.cover {
+  position: absolute;
+  width: 255px;
+  height: 255px;
+  top: 0px;
+  left: 50px;
+  background: black;
+  transition: width 1s, height 1s, transform 1s, top 1s, left 1s;
+  /* z-index: 0; */
+}
+.container6:hover .cover{
+  width: 100px;
+  height: 100px;
+  top: 250px;
+  left: 250px;
+  transform: rotate(180deg);
+}
+
+.img5 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  z-index: -2;
+}
+.placeholder {
+  color: red;
+}
+
+.box10 {
+  display: inline-block;
+  width: 620px;
+  height: 350px;
+  border: 1px solid black;
+  background: rgb(207, 204, 204);
+  margin: 50px;
+  position: relative;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  background: grey;
+  border-radius: 10px;
+  border: 1px solid black;
+  position: absolute;
+  opacity: 0.8;
+  transition: top 0.3s, left 0.3s, opacity 0.3s;
+  text-align: center;
+}
+
+#card1 {
+  top: 30px;
+  left: 50px;
+}
+
+#card2 {
+  top: 30px;
+  left: 100px;
+}
+
+#card3 {
+  top: 30px;
+  left: 200px;
+}
+
+#card4 {
+  top: 30px;
+  left: 300px;
+}
+
+#card1:hover,
+#card2:hover,
+#card3:hover,
+#card4:hover {
+  top: -10px;
+  opacity: 1;
+}
+
+.card:hover ~ #card1 {
+  left: 100px;
+}
+
+.card:hover ~ #card2 {
+  left: 250px;
+}
+
+.card:hover ~ #card3 {
+  left: 300px;
+}
+
+.card:hover ~ #card4 {
+  left: 400px;
 }
