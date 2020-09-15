@@ -97,18 +97,19 @@ nav a {
 @media only screen and (max-width: 480px) {
   .page-title {
     width: 270px;
-    
   }
 }
-@media (min-width: 320px) and (max-width: 480px), (orientation:portrait) {
+@media (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
   .gallery-item .thumbnail {
     width: 95%;
   }
- .logo, .page-title, .page-description {
-   display:block;
-  } 
+  .logo,
+  .page-title,
+  .page-description {
+    display: block;
+  }
   .logo {
-    margin:0 auto;
+    margin: 0 auto;
   }
 }
 
@@ -122,15 +123,20 @@ nav a {
     font-size: 20px;
   }
 }
-@media screen and (orientation:portrait) { 
-  body{
+@media screen and (orientation: portrait) {
+  body {
     background-image: url("../images/spaceportrait.jpg");
   }
- }
-@media screen and (orientation:landscape) {
-  body{
+}
+@media screen and (orientation: landscape) {
+  body {
     background-image: url("../images/space.jpg");
+  }
 }
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .page-title,
+  .page-description {
+    float: left;
+    max-width: 50%;
+  }
 }
-
-

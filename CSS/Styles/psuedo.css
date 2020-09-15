@@ -10,25 +10,24 @@
   margin-left: 20px;
   margin-bottom: 50px;
 }
-.button::before {
+.button::before,
+.button::after{
   content: "";
   position: absolute;
+  width: 60px;
+  height: 60px;
+}
+.button::before {
   border-left: 3px solid orange;
   border-top: 3px solid orange;
   top: 0;
   left: 0;
-  width: 60px;
-  height: 60px;
 }
 .button::after {
-  content: "";
-  position: absolute;
   bottom: 0;
   right: 0;
   border-right: 3px solid orange;
   border-bottom: 3px solid orange;
-  width: 60px;
-  height: 60px;
 }
 
 .roodborstje {
@@ -51,76 +50,69 @@
   right: 0;
   z-index: -1;
 }
-
-.Dodecagon {
+.Dodecagon,
+.Dodecagon::before,
+.Dodecagon::after{
   background: #459dcf;
   width: 180px;
   height: 180px;
+}
+.Dodecagon {
   position: relative;
   margin-top: 50px;
   margin-left: 260px;
   margin-bottom: 50px;
 }
-.Dodecagon::before {
-  transform: rotate(30deg);
+.Dodecagon::before,
+.Dodecagon::after{
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  height: 180px;
-  width: 180px;
-  background: #459dcf;
+}
+.Dodecagon::before {
+  transform: rotate(30deg);
 }
 .Dodecagon::after {
   transform: rotate(60deg);
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 180px;
-  width: 180px;
-  background: #459dcf;
 }
-.circle1,
-.circle2,
-.circle3 {
+.circle,
+.circle:before,
+.circle:after{
+  background: #459dcf;
+  border-radius: 50%;
+}
+
+.circle { 
   width: 200px;
   height: 200px;
   font-size: 30px;
   text-align: center;
-  background: #459dcf;
-  border-radius: 50%;
   position: relative;
   margin-left: 240px;
   margin-top: 10px;
   color: white;
 }
-.circle1:before,
-.circle2:before,
-.circle3:before {
+.circle::before,
+.circle::after
+{
   width: 100px;
   height: 100px;
+  top: 50px;
   content: ".";
   font-size: 40px;
   position: absolute;
-  top: 50px;
-  left: -50px;
-  background: #459dcf;
-  border-radius: 50%;
 }
-.circle1:after,
-.circle2:after,
-.circle3:after {
-  content: ".";
-  font-size: 40px;
-  position: absolute;
-  top: 50px;
+.circle::before {
+  left: -50px;
+}
+.circle::after {
   right: -50px;
-  width: 100px;
-  height: 100px;
-  background: #459dcf;
-  border-radius: 50%;
 }
 .centerp {
-  padding-top: 70px;
+  padding-top: 50px;
+}
+.circlebox{
+  display: flex;
+  margin: 20px;
 }
