@@ -1,16 +1,15 @@
-.changetextcolor {
+.change-text-color {
   margin: 20px;
   transition: color 1s; 
 }
-.changetextcolor:hover {
+.change-text-color:hover {
   color: #459dcf;
 }
-
-.container {
+.horizontal-moving-blocks-container {
   display: flex;
   justify-content: center;
 }
-.block {
+.horizontal-moving-blocks-background {
   position: relative;
   height: 365px;
   width: 800px;
@@ -18,7 +17,7 @@
   border: 1px solid black;
   background-color: rgb(201, 201, 201);
 }
-.item {
+.moving-block {
   position: absolute;
   right: 741px;
   top: 0;
@@ -28,33 +27,33 @@
   background-color: white;
   transition: right 3s, background-color 3s, border-radius 3s;
 }
-.block:hover .item {
+.horizontal-moving-blocks-background:hover .moving-block {
   right: -0px;
   background-color: #a0cae2;
 }
-.block:hover .item:nth-child(1) {
+.horizontal-moving-blocks-background:hover .moving-block:nth-child(1) {
   border-radius: 50%;
 }
-.block:hover .item:nth-child(2) {
+.horizontal-moving-blocks-background:hover .moving-block:nth-child(2) {
   border-radius: 15px;
   color: black;
 }
-.item:nth-child(1) {
+.moving-block:nth-child(1) {
   top: 0px;
 }
-.item:nth-child(2) {
+.moving-block:nth-child(2) {
   top: 70px;
   transition-timing-function: ease-in;
 }
-.item:nth-child(3) {
+.moving-block:nth-child(3) {
   top: 140px;
   transition-timing-function: ease-out;
 }
-.item:nth-child(4) {
+.moving-block:nth-child(4) {
   top: 210px;
   transition-timing-function: ease-in-out;
 }
-.item:nth-child(5) {
+.moving-block:nth-child(5) {
   top: 280px;
   transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
 }

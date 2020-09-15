@@ -1,27 +1,18 @@
-.container {
+.moving-block-container {
   display: inline-block;
   position: relative;
   width: 620px;
   height: 300px;
   margin-left: 50px;
 }
-.container5 {
-  display: flex;
-  justify-content: center;
-  margin: 100px;
-}
-.container6 {
-  position: relative;
-}
-
-.block {
+.moving-blocks {
   position: absolute;
   height: 290px;
   width: 800px;
   border: 1px solid black;
   background-color: rgb(201, 201, 201);
 }
-.item {
+.block {
   position: absolute;
   top: 105px;
   left: 375px;
@@ -31,58 +22,64 @@
   opacity: 1;
   transition: right 2s, left 2s, top 2s, bottom 2s;
 }
-.block:hover .item:nth-child(1) {
+.moving-blocks:hover .block:nth-child(1) {
   top: -1px;
   margin-left: 366px;
 }
-.block:hover .item:nth-child(2) {
+.moving-blocks:hover .block:nth-child(2) {
   left: 374px;
   top: -1px;
   margin-left: -375px;
 }
-.block:hover .item:nth-child(3) {
+.moving-blocks:hover .block:nth-child(3) {
   left: 374px;
   top: 221px;
   margin-left: -375px;
 }
-.item:nth-child(1) {
+.block:nth-child(1) {
   transition-property: margin-left, top, right;
   transition-duration: 1s, 1s;
   transition-timing-function: ease-in, ease;
 }
-.item:nth-child(2) {
+.block:nth-child(2) {
   transition-property: margin-left, top, right;
   transition-duration: 1s, 1s;
   transition-timing-function: ease-in, ease;
 }
-.item:nth-child(3){
+.block:nth-child(3) {
   transition-property: top, margin-left, left;
   transition-duration: 1s, 1s;
-  transition-delay: 1s,0s;
+  transition-delay: 1s, 0s;
   transition-timing-function: ease-in, ease-out;
 }
-.box {
-  top: 0;
-  left: 0;
+.yellow-container {
+  display: flex;
+  justify-content: left;
   width: 600px;
-  height: 500px;
+  height: 400px;
+  margin: 50px;
   border: 1px solid black;
   background: rgb(255, 219, 12);
-  /* z-index: -1; */
+}
+.yellow-box {
+  position: relative;
+  width: 255px;
+  height: 255px;
+  left: -50px;
+  background: rgb(255, 219, 12);
   margin-left: 50px;
 }
 
-.cover {
+.yellow-box-cover {
   position: absolute;
-  width: 255px;
-  height: 255px;
-  top: 0px;
-  left: 50px;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
   background: black;
   transition: width 1s, height 1s, transform 1s, top 1s, left 1s;
-  /* z-index: 0; */
 }
-.container6:hover .cover{
+.yellow-box:hover .yellow-box-cover {
   width: 100px;
   height: 100px;
   top: 250px;
@@ -90,17 +87,18 @@
   transform: rotate(180deg);
 }
 
-.img5 {
+.bacon-egg-image {
   width: 250px;
   height: 250px;
   border: 1px solid black;
   z-index: -2;
 }
+
 .placeholder {
   color: red;
 }
 
-.box10 {
+.card-container {
   display: inline-block;
   width: 620px;
   height: 350px;
@@ -122,19 +120,19 @@
   text-align: center;
 }
 
-.card:nth-child(1){
+.card:nth-child(1) {
   top: 30px;
   left: 50px;
 }
-.card:nth-child(2){
+.card:nth-child(2) {
   top: 30px;
   left: 100px;
 }
-.card:nth-child(3){
+.card:nth-child(3) {
   top: 30px;
   left: 200px;
 }
-.card:nth-child(4){
+.card:nth-child(4) {
   top: 30px;
   left: 300px;
 }
@@ -147,7 +145,7 @@
   opacity: 1;
 }
 
-.card:hover ~ .card:nth-child(1) {
+.card:hover .card:nth-child(1) {
   left: 100px;
 }
 
