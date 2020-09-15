@@ -52,11 +52,11 @@
   width: 200px;
   background-color: white;
 }
-img {
+.img {
   width: 200px;
   height: 200px;
 }
-h2 {
+.h2 {
   color: rgb(0, 153, 255);
   margin: 10px;
 }

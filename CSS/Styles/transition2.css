@@ -31,33 +31,34 @@
   opacity: 1;
   transition: right 2s, left 2s, top 2s, bottom 2s;
 }
-.block:hover #item1 {
+.block:hover .item:nth-child(1) {
   top: -1px;
   margin-left: 366px;
 }
-.block:hover #item2 {
+.block:hover .item:nth-child(2) {
   left: 374px;
   top: -1px;
   margin-left: -375px;
 }
-.block:hover #item3 {
+.block:hover .item:nth-child(3) {
   left: 374px;
   top: 221px;
   margin-left: -375px;
 }
-#item1 {
+.item:nth-child(1) {
   transition-property: margin-left, top, right;
   transition-duration: 1s, 1s;
   transition-timing-function: ease-in, ease;
 }
-#item2 {
+.item:nth-child(2) {
   transition-property: margin-left, top, right;
   transition-duration: 1s, 1s;
   transition-timing-function: ease-in, ease;
 }
-#item3 {
+.item:nth-child(3){
   transition-property: top, margin-left, left;
-  transition-duration: 2s, 0.5s;
+  transition-duration: 1s, 1s;
+  transition-delay: 1s,0s;
   transition-timing-function: ease-in, ease-out;
 }
 .box {
@@ -121,46 +122,43 @@
   text-align: center;
 }
 
-#card1 {
+.card:nth-child(1){
   top: 30px;
   left: 50px;
 }
-
-#card2 {
+.card:nth-child(2){
   top: 30px;
   left: 100px;
 }
-
-#card3 {
+.card:nth-child(3){
   top: 30px;
   left: 200px;
 }
-
-#card4 {
+.card:nth-child(4){
   top: 30px;
   left: 300px;
 }
 
-#card1:hover,
-#card2:hover,
-#card3:hover,
-#card4:hover {
+.card:nth-child(1):hover,
+.card:nth-child(2):hover,
+.card:nth-child(3):hover,
+.card:nth-child(4):hover {
   top: -10px;
   opacity: 1;
 }
 
-.card:hover ~ #card1 {
+.card:hover ~ .card:nth-child(1) {
   left: 100px;
 }
 
-.card:hover ~ #card2 {
+.card:hover ~ .card:nth-child(2) {
   left: 250px;
 }
 
-.card:hover ~ #card3 {
+.card:hover ~ .card:nth-child(3) {
   left: 300px;
 }
 
-.card:hover ~ #card4 {
+.card:hover ~ .card:nth-child(4) {
   left: 400px;
 }

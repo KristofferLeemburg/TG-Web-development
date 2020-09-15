@@ -32,29 +32,29 @@
   right: -0px;
   background-color: #a0cae2;
 }
-.block:hover #item1 {
+.block:hover .item:nth-child(1) {
   border-radius: 50%;
 }
-.block:hover #item2 {
+.block:hover .item:nth-child(2) {
   border-radius: 15px;
   color: black;
 }
-#item2 {
+.item:nth-child(1) {
   top: 0px;
 }
-#item2 {
+.item:nth-child(2) {
   top: 70px;
   transition-timing-function: ease-in;
 }
-#item3 {
+.item:nth-child(3) {
   top: 140px;
   transition-timing-function: ease-out;
 }
-#item4 {
+.item:nth-child(4) {
   top: 210px;
   transition-timing-function: ease-in-out;
 }
-#item5 {
+.item:nth-child(5) {
   top: 280px;
   transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
 }
