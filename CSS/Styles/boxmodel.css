@@ -1,4 +1,19 @@
-.box {
+.block-box {
+  border: 2px solid blue;
+  padding: .5em;
+  background-color: #459dcf;
+  display: block;
+}
+span {
+  background-color: white;
+  border: 1px black;
+  width: 100px;
+  height: 100px;
+}
+.background-color {
+  background-color: #61b1df;
+}
+.content-box {
   width: 100px;
   height: 100px;
   margin: 5px;
@@ -11,41 +26,38 @@
   margin: 30px;
   border: 5px solid black;
 }
-#boxsiz {
+.box-sizing-box {
   box-sizing: border-box;
   width: 120px;
   height: 120px;
   padding: 30px;
   border: 5px solid black;
 }
-.doos{
+.boxes-container{
   margin: 50px;
 }
-.box1,.box4,.box2,.box3 {
+.square-box,.negative-margin-box,.small-box,.dotted-border-box {
   width: 200px;
   height: 200px;
 }
-.box1 {
+.square-box {
   margin: 50px;
   padding: 50px;
   border: 5px solid black;
 }
-.box4 {
-  margin: -50px;
-  padding: 50px;
-  border: 5px solid black;
-}
-.box2 {
+.negative-margin-box {
   margin: 5px;
   padding: 5px;
   border: 5px solid black;
 }
-.box3 {
+.small-box {
   margin: 5px;
   padding: 5px;
   border: 5px dotted black;
 }
-
-.bg {
-  background-color: #61b1df;
+.dotted-border-box {
+  margin: -50px;
+  padding: 50px;
+  border: 5px solid black;
 }
+
