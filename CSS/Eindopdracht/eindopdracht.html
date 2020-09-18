@@ -6,40 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Eindopdracht</title>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="your-project-dir/font-css/LineIcons.css" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
     <link rel="stylesheet" href="../Styles/eindopdracht.css">
 </head>
 
 <body>
     <div>
         <nav class="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="contact.asp">Contact</a></li>
+            </ul>
         </nav>
         <main>
             <div class="cooking-header" id="Home">
-                <img src="" alt="">
-                <div>
-                    <h1>Cooking</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <button class="button-buy">buy</button>
-                    <button class="button-showmore">show more</button>
+                <div class="cooking-image"></div>
+                    <h1 id="cooking-h1">Cooking</h1>
+                    <p id="cooking-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit
+                        amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <div><button class="button-buy">buy</button></div>
+                    <div><button class="button-showmore">show more</button></div>
                 </div>
             </div>
+            <h1 class="header-populaire-gerechten">Populaire gerechten</h1>
             <div class="populaire-gerechten">
-                <h2></h2>
-                <div>
-                    <img src="" alt="">
-                    <h5>Pasta</h5>
-                    <p>€ 8.99</p>
+                <div class="populaire-gerechten-container">
+                    <img class="pasta-image" src="../images/dish1.jpg" alt="dish">
+                    <div class="pasta-head-text">
+                        <div class="pasta-header">Pasta</div>
+                        <div class="pasta-price">€ 8.99</div>
+                    </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eum similique quia ad possimus
                         libero
                         minus animi necessitatibus aut dignissimos autem mollitia illo atque vitae officia voluptate
                         quaerat, nihil dolores?</p>
                     <p>show...</p>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <h5>Pasta</h5>
-                    <p>€ 8.99</p>
+
+                <div class="populaire-gerechten-container">
+                    <img class="pasta-image" src="../images/dish1.jpg" alt="dish">
+                    <div class="pasta-head-text">
+                        <div class="pasta-header">Pasta</div>
+                        <div class="pasta-price">€ 8.99</div>
+                    </div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus recusandae non sit perspiciatis
                         alias
                         inventore qui et accusantium harum. Amet aspernatur, deserunt pariatur voluptate officiis
@@ -47,10 +57,12 @@
                         nihil fuga nisi accusantium.</p>
                     <p>show...</p>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <h5>Pasta</h5>
-                    <p>€ 8.99</p>
+                <div class="populaire-gerechten-container">
+                    <img class="pasta-image" src="../images/dish1.jpg" alt="dish">
+                    <div class="pasta-head-text">
+                        <div class="pasta-header">Pasta</div>
+                        <div class="pasta-price">€ 8.99</div>
+                    </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corrupti vitae nobis natus atque.
                         Eaque
                         ad odit, aliquam magni consequuntur iusto debitis necessitatibus eveniet nobis sapiente
@@ -59,107 +71,138 @@
                     <p>show...</p>
                 </div>
             </div>
+            <h1 class="header-menu">Menu</h1>
             <div class="menu" id="Menu">
                 <div>
-                    <img src="" alt="">
-                    <div>
-                        <h3></h3>
+                    <div class="chef-image">
+                    </div>
+                    <div class="menu-gerecht-container">
                         <div>
-                            <div>
-                                <h5>Pasta</h5>
+                            <div class="menu-gerecht">
+                                <div class="gerecht-headers">
+                                    <div class="gerecht-naam">Pasta</div>
+                                    <div class="gerecht-prijs">€8.99</div>
+                                </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
                                     reprehenderit
                                     neque laborum minima.</p>
-                                <p>€ 8.99</p>
                             </div>
-                            <div>
-                                <h5>Pasta</h5>
+                            <div class="menu-gerecht">
+                                <div class="gerecht-headers">
+                                    <div class="gerecht-naam">Pasta</div>
+                                    <div class="gerecht-prijs">€8.99</div>
+                                </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
                                     reprehenderit
                                     neque laborum minima.</p>
-                                <p>€ 8.99</p>
                             </div>
-                            <div>
-                                <h5>Pasta</h5>
+                            <div class="menu-gerecht">
+                                <div class="gerecht-headers">
+                                    <div class="gerecht-naam">Pasta</div>
+                                    <div class="gerecht-prijs">€8.99</div>
+                                </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
                                     reprehenderit
                                     neque laborum minima.</p>
-                                <p>€ 8.99</p>
                             </div>
-                            <div>
-                                <h5>Pasta</h5>
+                            <div class="menu-gerecht">
+                                <div class="gerecht-headers">
+                                    <div class="gerecht-naam">Pasta</div>
+                                    <div class="gerecht-prijs">€8.99</div>
+                                </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
                                     reprehenderit
                                     neque laborum minima.</p>
-                                <p>€ 8.99</p>
-                            </div>
-                            <div>
-                                <h5>Pasta</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
-                                    reprehenderit
-                                    neque laborum minima.</p>
-                                <p>€ 8.99</p>
-                            </div>
-                            <div>
-                                <h5>Pasta</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
-                                    reprehenderit
-                                    neque laborum minima.</p>
-                                <p>€ 8.99</p>
-                            </div>
-                            <div>
-                                <h5>Pasta</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
-                                    reprehenderit
-                                    neque laborum minima.</p>
-                                <p>€ 8.99</p>
-                            </div>
-                            <div>
-                                <h5>Pasta</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
-                                    reprehenderit
-                                    neque laborum minima.</p>
-                                <p>€ 8.99</p>
-                            </div>
-                            <div>
-                                <h5>Pasta</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
-                                    reprehenderit
-                                    neque laborum minima.</p>
-                                <p>€ 8.99</p>
-                            </div>
-                            <div>
-                                <h5>Pasta</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
-                                    reprehenderit
-                                    neque laborum minima.</p>
-                                <p>€ 8.99</p>
-                            </div>
-                            <div>
-                                <h5>Pasta</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
-                                    reprehenderit
-                                    neque laborum minima.</p>
-                                <p>€ 8.99</p>
-                            </div>
-                            <div>
-                                <h5>Pasta</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
-                                    reprehenderit
-                                    neque laborum minima.</p>
-                                <p>€ 8.99</p>
                             </div>
                         </div>
+                        <div>
+                            <div class="menu-gerecht">
+                                <div class="gerecht-headers">
+                                    <div class="gerecht-naam">Pasta</div>
+                                    <div class="gerecht-prijs">€8.99</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
+                                    reprehenderit
+                                    neque laborum minima.</p>
+                            </div>
+                            <div class="menu-gerecht">
+                                <div class="gerecht-headers">
+                                    <div class="gerecht-naam">Pasta</div>
+                                    <div class="gerecht-prijs">€8.99</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
+                                    reprehenderit
+                                    neque laborum minima.</p>
+                            </div>
+                            <div class="menu-gerecht">
+                                <div class="gerecht-headers">
+                                    <div class="gerecht-naam">Pasta</div>
+                                    <div class="gerecht-prijs">€8.99</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
+                                    reprehenderit
+                                    neque laborum minima.</p>
+                            </div>
+                            <div class="menu-gerecht">
+                                <div class="gerecht-headers">
+                                    <div class="gerecht-naam">Pasta</div>
+                                    <div class="gerecht-prijs">€8.99</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
+                                    reprehenderit
+                                    neque laborum minima.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="menu-gerecht">
+                                <div class="gerecht-headers">
+                                    <div class="gerecht-naam">Pasta</div>
+                                    <div class="gerecht-prijs">€8.99</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
+                                    reprehenderit
+                                    neque laborum minima.</p>
+                            </div>
+                            <div class="menu-gerecht">
+                                <div class="gerecht-headers">
+                                    <div class="gerecht-naam">Pasta</div>
+                                    <div class="gerecht-prijs">€8.99</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
+                                    reprehenderit
+                                    neque laborum minima.</p>
+                            </div>
+                            <div class="menu-gerecht">
+                                <div class="gerecht-headers">
+                                    <div class="gerecht-naam">Pasta</div>
+                                    <div class="gerecht-prijs">€8.99</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
+                                    reprehenderit
+                                    neque laborum minima.</p>
+                            </div>
+                            <div class="menu-gerecht">
+                                <div class="gerecht-headers">
+                                    <div class="gerecht-naam">Pasta</div>
+                                    <div class="gerecht-prijs">€8.99</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus,
+                                    reprehenderit
+                                    neque laborum minima.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </main>
-        <footer class="footer">
+        <footer>
             <div class="contact">
-                <h5>Contact</h5>
+                <div class="contact-header">Contact</div>
+                <br>
                 <p>Osdorpplein 16, 1234ab, Amsterdam<br>
                     Tel nr.12345678<br>
-                    Openingstijden: ma t/m vr 10:00 - 22:00</p>
+                    Openingstijden: ma t/m vr 10:00 - 22:00</p><br>
                 <div class="icons">
                     <i class="lni lni-instagram"></i>
                     <i class="lni lni-twitter"></i>
@@ -167,6 +210,8 @@
                 </div>
             </div>
             <div class="footer-navigation">
+                <div class="navigation-header">Navigation</div>
+                <br>
                 <a href="#Home">Home</a>
                 <a href="#Menu">Menu</a>
                 <a href="mailto:kristofferleemburg@gmail.com">Contact</a>

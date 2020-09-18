@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+}   
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.page-layout {
+    display: flex;
+}
+
+nav {
+    position: 100%;
+    background-color: #4B86CB;
+    width: 300px;
+    height: 789px;
+}
+
+main h3 {
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+
+nav p,
+nav h2 {
+    text-align: center;
+    color: white;
+}
+nav h2{
+    font-size: 40px;
+}
+.lni {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.lni:hover{
+    color: #30639c;
+}
+
+main h3 {
+    color: #4B86CB;
+    padding: 20px;
+    margin-left: 200px;
+}
+
+.table-header {
+    text-align: center;
+    font-size: 30px;
+}
+
+.member-table {
+    width: 600px;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 900px;
+    margin-left: 100px;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+tr:nth-child(even) {
+    background-color: #a0aec0;
+}
+
+tr:hover {
+    background-color: #4B86CB;
+}
+
+.input-form-header {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+.input-form {
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.group {
+    display: inline-block;
+}
+
+.text-input {
+    background-color: #C5DEEA;
+    border-radius: 5%;
+    border: none;
+    height: 30px;
+}
+
+.form-label {
+    font-size: 20px;
+}
