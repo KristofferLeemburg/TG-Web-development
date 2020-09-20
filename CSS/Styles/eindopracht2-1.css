@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+h2 {
+    background-color: #4B86CB;
+    color: white;
+    font-size: 3vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.lni{
+    margin-top:5vh;
+    }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-links {
+    margin-top: 50px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+.profile-img {
+    border-radius: 5%;
+}
+
+main>.navigation {
+    flex: 1;
+    order: 1;
+}
+
+main>.right-section,
+main>.left-section {
+    flex: 2.5;
+}
+
+main>.right-section {
+    order: 3;
+}
+
+main>.left-section {
+    order: 2;
+}
+
+.navigation {
+    background-color: #4b86cb;
+}
+
+.navigation,
+.right-section,
+.left-section {
+    padding: 1em;
+}
+
+.frameworks {
+    font: 1em arial, helvetica, sans-serif;
+    width: 780px;
+}
+
+span:nth-child(1) {
+    color: cyan;
+    font-size: 1em;
+}
+
+span:nth-child(2) {
+    color: red;
+    font-size: 0.5em;
+    vertical-align: text-top;
+}
+
+span:nth-child(3) {
+    color: cyan;
+    font-size: 0.5em;
+    vertical-align: top;
+}
+
+span:nth-child(4) {
+    color: chartreuse;
+    vertical-align: -0.5em;
+}
+
+span:nth-child(5) {
+    color: green;
+    font-size: 0.5em;
+    vertical-align: middle;
+}
+
+span:nth-child(6) {
+    color: purple;
+    font-size: 0.5em;
+    vertical-align: sub;
+}
+
+span:nth-child(7) {
+    color: blue;
+    font-size: 1.5em;
+    vertical-align: 0.5em;
+}
+
+span:nth-child(8) {
+    color: red;
+    font-size: 1em;
+    vertical-align: super;
+}
+
+span:nth-child(9) {
+    color: #0a0;
+    font-size: 1em;
+    vertical-align: super;
+}
+
+span:nth-child(10) {
+    color: green;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+span:nth-child(11) {
+    color: cyan;
+    font-size: 1em;
+    vertical-align: 0.5em;
+}
+
+span:nth-child(12) {
+    color: cyan;
+    font-size: 4em;
+    vertical-align: 0.5em;
+}
+
+span:nth-child(13) {
+    color: cyan;
+    font-size: 1.5em;
+    vertical-align: 0.5em;
+}
+
+span:nth-child(14) {
+    color: green;
+    font-size: 3em;
+    vertical-align: 0.3em;
+}
+
+span:nth-child(15) {
+    color: cyan;
+    font-size: 2em;
+    vertical-align: 0.2em;
+}
+
+span:nth-child(16) {
+    color: yellow;
+    font-size: 2em;
+    vertical-align: 0.7em;
+}
