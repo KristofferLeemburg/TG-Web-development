@@ -1,0 +1,19 @@
+@mixin unclicked {
+  background-color: lightblue;
+  color: teal;
+  width: 300px;
+  height: 100px;
+}
+@mixin hover {
+  background-color: red;
+  color: yellow;
+  transition: 2s;
+}
+
+.button {
+  @include unclicked();
+
+  &:hover {
+    @include hover();
+  }
+}

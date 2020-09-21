@@ -1,0 +1,16 @@
+@import "./assets/button";
+@import "./assets/colors";
+
+.button {
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    }
+  
+    .button:hover {
+      background-color: darkred;
+      color: $secondary-color;
+    }
+
+  
+  
