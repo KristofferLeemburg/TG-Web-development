@@ -1,0 +1,119 @@
+@import "base";
+@import "colors";
+@import "fonts";
+
+body {
+  background-color: $background-color;
+  font-family: "Lobster", cursive;
+  font-size: calc(1em + 1vw);
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 0.7em;
+}
+.cooking-header {
+  position: relative;
+  height: 680px;
+  width: auto;
+  &::before {
+    background-image: url(../images/cooking.jpg);
+    content: "";
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: -700px;
+    bottom: 0;
+    right: 0;
+  }
+}
+#cooking-h1 {
+  @include header-text();
+  font-size: $header-font;
+  top: 10%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#cooking-p {
+  @include header-text();
+  max-width: 90%;
+  top: 30%;
+  left: 10%;
+  bottom: 10%;
+  right: 10%;
+}
+.header-populaire-gerechten {
+  font-size: $sub-header-font;
+  text-align: center;
+}
+.populaire-gerechten {
+  @extend %flex-column;
+  /* padding: 20px; */
+
+  .populaire-gerechten-container {
+    padding: 5%;
+    .pasta-image {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+    .pasta-head-text {
+      @extend %flex-space;
+      .pasta-header {
+        font-size: $button-font;
+      }
+      .pasta-price {
+        font-size: $button-font;
+      }
+    }
+    .pasta-bottom-text {
+      @extend %flex-space;
+    }
+  }
+}
+.header-menu {
+  font-size: $sub-header-font;
+  margin-left: 120px;
+}
+.menu {
+  @extend %flex-row;
+  position: relative;
+  margin-bottom: 680px;
+  .chef-image {
+    background: none;
+    width: 0;
+    height: 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 300px;
+  }
+  .menu-gerecht-container {
+    @extend %flex-column;
+    // flex-wrap: wrap;
+    // width: 500px;
+    // height: 4000px;
+    // top: 0;
+    // left: -50px;
+    // right: 0;
+    // bottom: 0;
+    // margin-left: 40px;
+    // margin-bottom: 350px;
+    .menu-gerecht {
+      max-width: 300px;
+      .gerecht-headers {
+        @extend %flex-space;
+        margin: 20px;
+        font-size: $standard-font;
+        .gerecht-naam {
+          @extend %gerecht-header;
+        }
+        .gerecht-prijs {
+          @extend %gerecht-header;
+        }
+      }
+    }
+  }
+}

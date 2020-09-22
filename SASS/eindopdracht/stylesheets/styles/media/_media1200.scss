@@ -1,0 +1,68 @@
+@import "../base";
+@import "../colors";
+@import "../fonts";
+
+@media (min-width: 1200px) {
+  .navigation {
+    ul {
+      justify-content: flex-end;
+    }
+  }
+  #cooking-h1 {
+    left: 50%;
+  }
+  #cooking-p {
+    max-width: 50%;
+    top: 40%;
+    left: 40%;
+    bottom: 10%;
+    right: 10%;
+  }
+  .button-buy {
+    top: 65%;
+    left: 50%;
+  }
+  .button-showmore {
+    top: 65%;
+    left: 70%;
+  }
+  .populaire-gerechten {
+    @extend %flex-row;
+    justify-content: center;
+    margin: 50px;
+  }
+  .header-menu {
+    text-align: center;
+  }
+  .menu {
+    @extend %flex-column;
+    width: 100%;
+    .chef-image {
+      background: url(../../../images/chef1.webp);
+      width: 230px;
+      height: 380px;
+      top: 700px;
+      left: 100px;
+    }
+    .menu-gerecht-container {
+      @extend %flex-column;
+      margin-left: 500px;
+      margin-bottom: 0px;
+      .menu-gerecht {
+        width: 100%;
+        padding: 30px;
+      }
+    }
+  }
+  footer {
+    @extend %flex-space;
+    flex-direction: row;
+    margin-top: 0;
+    .contact {
+      margin-left: 5%;
+    }
+    .footer-navigation {
+      margin-right: 5%;
+    }
+  }  
+}

@@ -1,0 +1,632 @@
+footer, footer .footer-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation, .navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation ul, footer, footer .footer-navigation {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer, footer .footer-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation, .navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation ul, footer, footer .footer-navigation {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navigation {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navigation ul {
+  background-color: rgba(189, 189, 189, 0.8);
+  border-bottom: 1px solid black;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.navigation ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navigation ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+
+.button-buy {
+  position: absolute;
+  content: "";
+  width: 6em;
+  height: 3em;
+  color: #1d95cc;
+  text-transform: uppercase;
+  border: 1px solid greenyellow;
+  background-color: rgba(0, 0, 0, 0.267);
+  font-family: "Lobster", cursive;
+  font-size: 1em;
+  -webkit-transition: 1s;
+  transition: 1s;
+  bottom: 0;
+  right: 0;
+  top: 80%;
+  left: 10%;
+}
+
+.button-buy:hover {
+  background-color: #035891;
+}
+
+.button-showmore {
+  position: absolute;
+  content: "";
+  width: 6em;
+  height: 3em;
+  color: #1d95cc;
+  text-transform: uppercase;
+  border: 1px solid greenyellow;
+  background-color: rgba(0, 0, 0, 0.267);
+  font-family: "Lobster", cursive;
+  font-size: 1em;
+  -webkit-transition: 1s;
+  transition: 1s;
+  bottom: 0;
+  right: 0;
+  top: 80%;
+  left: 60%;
+}
+
+.button-showmore:hover {
+  background-color: #035891;
+}
+
+footer {
+  width: 100%;
+  background-color: #a4e464;
+  color: #1d95cc;
+  margin-top: 50%;
+}
+
+footer .contact {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+footer .contact-header {
+  font-size: 2em;
+}
+
+footer .footer-navigation {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .navigation-header {
+  font-size: 2em;
+}
+
+.lni {
+  padding: 5%;
+  font-size: xx-large;
+}
+
+footer, footer .footer-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation, .navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation ul, footer, footer .footer-navigation {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: grey;
+  font-family: "Lobster", cursive;
+  font-size: calc(1em + 1vw);
+}
+
+p {
+  font-size: 0.7em;
+}
+
+.cooking-header {
+  position: relative;
+  height: 680px;
+  width: auto;
+}
+
+.cooking-header::before {
+  background-image: url(../images/cooking.jpg);
+  content: "";
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: -700px;
+  bottom: 0;
+  right: 0;
+}
+
+#cooking-h1,
+#cooking-p {
+  position: absolute;
+  content: "";
+}
+
+#cooking-h1 {
+  font-size: 3em;
+  color: #1d95cc;
+  text-align: center;
+  top: 10%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+#cooking-p {
+  text-align: center;
+  max-width: 90%;
+  color: #1d95cc;
+  top: 30%;
+  left: 10%;
+  bottom: 10%;
+  right: 10%;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.header-populaire-gerechten {
+  color: black;
+  font-size: 2em;
+  text-align: center;
+}
+
+.populaire-gerechten {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* padding: 20px; */
+}
+
+.populaire-gerechten .populaire-gerechten-container {
+  padding: 5%;
+}
+
+.populaire-gerechten .populaire-gerechten-container .pasta-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.populaire-gerechten .populaire-gerechten-container .pasta-head-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.populaire-gerechten .populaire-gerechten-container .pasta-head-text .pasta-header {
+  font-size: 1em;
+}
+
+.populaire-gerechten .populaire-gerechten-container .pasta-head-text .pasta-price {
+  font-size: 1em;
+}
+
+.populaire-gerechten .populaire-gerechten-container .pasta-bottom-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-menu {
+  color: black;
+  font-size: 2em;
+  margin-left: 120px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-bottom: 680px;
+}
+
+.menu .chef-image {
+  background: none;
+  width: 0;
+  height: 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 300px;
+}
+
+.menu .menu-gerecht-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: -50px;
+  right: 0;
+  bottom: 0;
+  margin-left: 40px;
+  margin-bottom: 350px;
+}
+
+.menu .menu-gerecht-container .menu-gerecht {
+  max-width: 300px;
+}
+
+.menu .menu-gerecht-container .menu-gerecht .gerecht-headers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  font-size: 1.5em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .menu-gerecht-container .menu-gerecht .gerecht-headers .gerecht-naam {
+  font-weight: bold;
+  font-size: 0.5em;
+}
+
+.menu .menu-gerecht-container .menu-gerecht .gerecht-headers .gerecht-prijs {
+  font-size: 0.5em;
+  font-weight: bold;
+}
+
+footer, footer .footer-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation, .navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation ul, footer, footer .footer-navigation {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 576px) and (orientation: landscape) and (max-width: 992px) {
+  p {
+    font-size: 0.6em;
+  }
+  li {
+    padding-right: 100px;
+  }
+  ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .cooking-image {
+    width: 100%;
+    padding: 0;
+    color: lightblue;
+  }
+  #cooking-h1 {
+    font-size: 3em;
+    top: 20%;
+  }
+  #cooking-p {
+    text-align: center;
+    max-width: 90%;
+    color: #1d95cc;
+    top: 50%;
+    left: 10%;
+    bottom: 10%;
+    right: 10%;
+  }
+  .button-buy {
+    width: 7em;
+    height: 3em;
+    text-transform: uppercase;
+    border: 1px solid greenyellow;
+    background-color: rgba(0, 0, 0, 0.267);
+    font-size: 1em;
+    font-family: "Lobster", cursive;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    top: 80%;
+    left: 10%;
+    bottom: 0;
+    right: 0;
+  }
+  .button-buy:hover {
+    background-color: #035891;
+  }
+  .button-showmore {
+    width: 7em;
+    height: 3em;
+    text-transform: uppercase;
+    border: 1px solid greenyellow;
+    background-color: rgba(0, 0, 0, 0.267);
+    font-size: 1em;
+    font-family: "Lobster", cursive;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    top: 80%;
+    left: 55%;
+    bottom: 0;
+    right: 0;
+  }
+  .button-showmore:hover {
+    background-color: #035891;
+  }
+  .populaire-gerechten-container {
+    width: 280px;
+    padding: 20px;
+  }
+  .populaire-gerechten {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pasta-image {
+    width: 100px;
+    height: 100px;
+    margin-left: 20%;
+    margin-bottom: 10%;
+  }
+  .menu-gerecht-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 300px;
+    height: 80px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .gerecht-headers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px;
+    font-size: 1.5em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu-gerecht {
+    max-width: 200px;
+    padding: 18px;
+  }
+  .contact {
+    text-align: center;
+  }
+  .contact-header {
+    font-size: 1.5rem;
+  }
+  .footer-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* flex-wrap: wrap; */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navigation-header {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background: rgba(189, 189, 189, 0.8);
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  li {
+    margin-right: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+  }
+  #cooking-h1 {
+    left: 50%;
+  }
+  #cooking-p {
+    max-width: 50%;
+    top: 40%;
+    left: 40%;
+    bottom: 10%;
+    right: 10%;
+  }
+  .button-buy {
+    top: 65%;
+    left: 50%;
+  }
+  .button-showmore {
+    top: 65%;
+    left: 70%;
+  }
+  .populaire-gerechten {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 50px;
+  }
+  .header-menu {
+    text-align: center;
+  }
+  .menu {
+    width: 100%;
+  }
+  .menu-gerecht-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 500px;
+    margin-bottom: 0px;
+  }
+  .menu-gerecht {
+    width: 100%;
+    padding: 30px;
+  }
+  .chef-image {
+    background: url(../images/chef1.webp);
+    width: 230px;
+    height: 380px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 700px;
+    left: 100px;
+  }
+  footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    margin-top: 0;
+  }
+  .footer-navigation {
+    margin-right: 5%;
+  }
+  .contact {
+    margin-left: 5%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

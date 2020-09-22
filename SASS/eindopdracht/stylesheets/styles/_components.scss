@@ -1,0 +1,71 @@
+@import "base";
+@import "colors";
+@import "fonts";
+
+.navigation {
+  @extend %flex;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  ul {
+    @extend %flex;
+    @extend %flex-center;
+    background-color:$navigation-color;
+    border-bottom: $border;
+    width: 100%;
+    position: sticky;
+    li {
+      display: inline;
+      margin-right: 20px;
+    }
+    a {
+      text-decoration: none;
+      font-size: $standard-font;
+    }
+  }
+}
+.button-buy {
+  @include button-position();
+  top: 80%;
+  left: 10%;
+  &:hover {
+    background-color: $button-hover-color;
+  }
+}
+.button-showmore {
+  @include button-position();
+  top: 80%;
+  left: 60%;
+  &:hover {
+    background-color: $button-hover-color;
+  }
+}
+footer {
+  @extend %flex-wrap-column;
+  @extend %flex-center;
+  width: 100%;
+  background-color:$footer-color;
+  color: $primary-color;
+  margin-top: 50%;
+  .contact {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  .contact-header {
+    font-size: $sub-header-font;
+  }
+  .footer-navigation {
+    @extend %flex-wrap-column;
+    @extend %flex-center;
+    align-items: center;
+  }
+  .navigation-header {
+    font-size: $sub-header-font;
+  }
+}
+.lni {
+  padding: 5%;
+  font-size: xx-large;
+}
