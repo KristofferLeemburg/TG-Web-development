@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>checkName</h1>
+  <input id="text" type="text">
+  <button onclick="checkName()">translate</button>
+
+  <div><span id="checkName"></span></div>
+
+  <script>
+    function checkName() {
+
+    name = document.getElementById("text").value;
+    let checkName = document.getElementById("checkName").innerHTML = name + " is een bekende van ons.";
+
+      switch (name) {
+        case "John":
+        checkName;
+          break;
+        case "Olly":
+        checkName;
+          break;
+        case "Mo":
+        checkName;
+          break;
+        case "Hendrik":
+        checkName;
+          break;
+        case "Tony":
+        checkName;
+          break;
+        default:
+        document.getElementById("checkName").innerHTML = name + " is een onbekende van ons.";
+          break;
+      }
+    
+    }
+  </script>
+
+</body>
+
+</html>
