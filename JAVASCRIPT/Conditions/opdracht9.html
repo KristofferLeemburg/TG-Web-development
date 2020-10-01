@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="number" name="number" type="number">
+<button onclick="myNumber()">Button</button>
+
+<div><span id="label"></span></div>
+
+
+<script>
+function myNumber() {
+  let number = document.getElementById("number").value;
+  let label;
+
+  if (number > 5 && number < 10) {
+    label = "Het ingevoerde getal is tussen 5 en 10";
+  }
+  else
+  {
+    label = "";
+  }
+  document.getElementById("label").innerHTML = label;
+}
+</script>
+
+</body>
+</html>

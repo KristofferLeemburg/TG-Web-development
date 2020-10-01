@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="number" name="number" type="number">
+<button onclick="myNumber()">Button</button>
+
+<div><span id="label"></span></div>
+
+<script>
+function myNumber() {
+  let number = document.getElementById("number").value;
+  let label;
+
+  if (number < 31 || number > 35 && number < 41 || number > 45) {
+    label = "het getal is tussen 30 en 35 of het getal is tussen 40 en 45.";
+  }
+  else
+  {
+    label = "";
+  }
+  document.getElementById("label").innerHTML = label;
+}
+</script>
+
+</body>
+</html>

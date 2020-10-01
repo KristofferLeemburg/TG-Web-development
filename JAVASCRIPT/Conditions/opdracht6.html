@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- 
+        
+    The single bang does two things:
+    Determines the values associated true/false value.
+    Returns the opposite of the associated true/false value. 
+    
+    -->
+    <!-- 
+        
+    In Javascript, the exclamation mark (“!”) symbol, called a “bang,” is the logical “not” operator. 
+    Placed in front of a boolean value it will reverse the value, returning the opposite.
+    !true; // Returns false.
+    !false; // Returns true.
+    Just like a conditional if statement, a bang (“!”) creates a boolean context. 
+    So, for example, the string abc, which is associated with true, will evaluate to false if a bang is placed in front of it. 
+
+    -->
+
+    <script>
+        const x = 'abc'; // Coerces to true in a boolean context
+        const y = null; // Coerces to false in a boolean context
+        // "!" Creates a boolean context and returns the opposite.
+        const a = !x; // Value a is opposite of x, false.
+        const b = !y; // Value a is opposite of y, true.
+        if (a) {
+            // NOT executed.
+        }
+        if (b) {
+            // Executed.
+        }
+    </script>
+</body>
+
+</html>

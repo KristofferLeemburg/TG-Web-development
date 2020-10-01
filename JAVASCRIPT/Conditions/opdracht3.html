@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="number" name="number" type="number">
+<button onclick="myNumber()">Button</button>
+
+<div><span id="label"></span></div>
+
+<script>
+function myNumber() {
+  let number = document.getElementById("number").value;
+  let label;
+
+  if (number >= 11) {
+    label = "Het ingevoerde getal is gelijk aan 11 of groter dan 11";
+  }
+  else
+  {
+    label = "";
+  }
+  document.getElementById("label").innerHTML = label;
+}
+</script>
+
+</body>
+</html>
