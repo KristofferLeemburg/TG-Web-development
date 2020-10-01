@@ -3,34 +3,40 @@
 
 <body>
   <h1>checkName</h1>
-  <input id="text" name="text" type="text">
-  <button onclick="checkName(name)">translate</button>
+
+  <button onclick="checkName()">Check</button>
   <div><span id="checkName"></span></div>
+
 
   <script>
 
-    function checkName(name) {
-    name = document.getElementById("text").value;
-    let checkName = document.getElementById("checkName").innerHTML = name + " is een bekende van ons.";
-    
-      if (name == "John") {
-        checkName
+    function checkName() {
+      const words = ["John", "Olly", "Mo", "Hendrik", "Tony", "Irus", "Jan", "Peter"];
+      let randomNumber = words[Math.round(Math.random() * 7)];
+      name = randomNumber;
+      let checkName = document.getElementById("checkName").innerHTML = name + " is een bekende van ons.";
+
+      switch (name) {
+        case "John":
+          checkName;
+          break;
+        case "Olly":
+          checkName;
+          break;
+        case "Mo":
+          checkName;
+          break;
+        case "Hendrik":
+          checkName;
+          break;
+        case "Tony":
+          checkName;
+          break;
+        default:
+          document.getElementById("checkName").innerHTML = name + " is een onbekende van ons.";
+          break;
       }
-      else if (name == "Olly") {
-        checkName
-      }
-      else if (name == "Mo") {
-        checkName
-      }
-      else if (name == "Hendrik") {
-        checkName
-      }
-      else if (name == "Tony") {
-        checkName
-      }
-      else {
-        document.getElementById("checkName").innerHTML = name + " is een onbekende van ons.";
-      }
+      
     }
   </script>
 

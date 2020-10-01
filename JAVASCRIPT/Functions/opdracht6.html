@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>checkName</h1>
+  <button onclick="checkName()">Check</button>
+  <div><span id="checkName"></span></div>
+
+  <script>
+
+    let checkName = () => {
+      const words = ["John", "Olly", "Mo", "Hendrik", "Tony", "Irus", "Jan", "Peter"];
+      let randomNumber = words[Math.round(Math.random() * 7)];
+      name = randomNumber;
+      let checkName = document.getElementById("checkName").innerHTML = name + " is een bekende van ons.";
+
+      const nameSwitch = (name) => ({
+        "John": checkName,
+        "Olly": checkName,
+        "Mo": checkName,
+        "Hendrik": checkName,
+        "Tony": checkName
+      })
+    }
+  </script>
+
+</body>
+
+</html>
