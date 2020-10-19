@@ -67,32 +67,32 @@
         <div class="buttons">
             <!-- Wanneer een getal is ingevoerd dan verandert de tekst van AC naar C. -->
             <!-- De AC of C symbol reset jouw rekenmachine -->
-            <button id="ac" value="c" onclick="wis()">c</button>
-            <button id="posneg" onclick="posToNeg('a')">+/-</button>
+            <button id="ac" value="c" onclick="clearScreen()">c</button>
+            <button id="posneg" onclick="posToNeg();negToPos()">+/-</button>
             <!-- De % symbool is een modulo. -->
-            <button onclick="press('%')">%</button>
-            <button class="symbol" id="symbol" value="/" onclick="press('/')">/</button>
-            <button onclick="press('7')">7</button>
-            <button onclick="press('8')">8</button>
-            <button onclick="press('9')">9</button>
-            <button class="symbol" id="multiply" onclick="press('*')">*</button>
-            <button onclick="press('4')">4</button>
-            <button onclick="press('5')">5</button>
-            <button onclick="press('6')">6</button>
-            <button class="symbol" value="-" onclick="press('-')">-</button>
-            <button onclick="press('1')">1</button>
-            <button onclick="press('2')">2</button>
-            <button onclick="press('3')">3</button>
-            <button class="symbol" onclick="press('+')">+</button>
-            <button onclick="press('0')">0</button>
-            <button onclick="press('.')">.</button>
+            <button onclick="input('%')">%</button>
+            <button class="symbol" id="symbol" value="/" onclick="input('/')">/</button>
+            <button onclick="input('7')">7</button>
+            <button onclick="input('8')">8</button>
+            <button onclick="input('9')">9</button>
+            <button class="symbol" id="multiply" onclick="input('*')">*</button>
+            <button onclick="input('4')">4</button>
+            <button onclick="input('5')">5</button>
+            <button onclick="input('6')">6</button>
+            <button class="symbol" value="-" onclick="input('-')">-</button>
+            <button onclick="input('1')">1</button>
+            <button onclick="input('2')">2</button>
+            <button onclick="input('3')">3</button>
+            <button class="symbol" onclick="input('+')">+</button>
+            <button onclick="input('0')">0</button>
+            <button onclick="input('.')">.</button>
             <button class="symbol" onclick="cal()">=</button>
         </div>
     </div>
 </body>
 
 <script>
-    function press(val) {
+    function input(val) {
         document.getElementById("screen").value += val;
         // let newVal = parseInt(val);
         // console.log(newVal);
@@ -102,22 +102,23 @@
         let neg = document.getElementById("screen").value;
         document.getElementById("screen").value = -Math.abs(neg);
     }
+    function negToPos() {
+        // let pos = document.getElementById("screen").value;
+        // document.getElementById("screen").value = Math.abs();
+    }
+
     function cal() {
         let a = document.getElementById("screen").value;
         let b = eval(a);
-        console.log(a);
-        console.log(b);
         // Als het antwoord een decimaal getal bevat, dan rond je het antwoord altijd af op 2
         // decimaal getal.
         let c = b.toFixed(2);
         document.getElementById("screen").value = c;
-        console.log(c);
     }
     // De AC of C symbol reset jouw rekenmachine
-    function wis() {
+    function clearScreen() {
         document.getElementById("screen").value = "";
     }
-
     //Wanneer een getal is ingevoerd dan verandert de tekst van AC naar C.
     document.getElementById("ac").innerHTML = "AC";
     //Wanneer een rekenkundig symbol (/, X, -, +, =) is geklikt, dan wordt de
