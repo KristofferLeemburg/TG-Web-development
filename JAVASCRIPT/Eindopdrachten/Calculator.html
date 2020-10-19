@@ -64,10 +64,20 @@
             <input class="screen" type="text" id="screen">
         </div>
         <div class="buttons">
+<<<<<<< HEAD
             <button id="ac" onclick="clearScreen()">c</button>
             <button id="posneg" onclick="posToNeg();negToPos()">+/-</button>
             <button onclick="input('%')">%</button>
             <button class="symbol" id="symbol" onclick="input('/')">/</button>
+=======
+            <!-- Wanneer een getal is ingevoerd dan verandert de tekst van AC naar C. -->
+            <!-- De AC of C symbol reset jouw rekenmachine -->
+            <button id="ac" value="c" onclick="clearScreen()">c</button>
+            <button id="posneg" onclick="posToNeg();negToPos()">+/-</button>
+            <!-- De % symbool is een modulo. -->
+            <button onclick="input('%')">%</button>
+            <button class="symbol" id="symbol" value="/" onclick="input('/')">/</button>
+>>>>>>> master
             <button onclick="input('7')">7</button>
             <button onclick="input('8')">8</button>
             <button onclick="input('9')">9</button>
@@ -75,7 +85,11 @@
             <button onclick="input('4')">4</button>
             <button onclick="input('5')">5</button>
             <button onclick="input('6')">6</button>
+<<<<<<< HEAD
             <button class="symbol" onclick="input('-')">-</button>
+=======
+            <button class="symbol" value="-" onclick="input('-')">-</button>
+>>>>>>> master
             <button onclick="input('1')">1</button>
             <button onclick="input('2')">2</button>
             <button onclick="input('3')">3</button>
@@ -88,6 +102,7 @@
 </body>
 
 <script>
+<<<<<<< HEAD
     let $ = (id) => document.getElementById(id);
     let input = (val) => $("screen").value += val;
     let posToNeg = () => {
@@ -105,6 +120,41 @@
     // $("ac").innerHTML = "AC";
     // $("symbol").style.backgroundColor = "white";
     // $("screen").style.color = "orange";
+=======
+    function input(val) {
+        document.getElementById("screen").value += val;
+        // let newVal = parseInt(val);
+        // console.log(newVal);
+    }
+    // De +/- symbool maakt het getal negatief of positief.
+    function posToNeg() {
+        let neg = document.getElementById("screen").value;
+        document.getElementById("screen").value = -Math.abs(neg);
+    }
+    function negToPos() {
+        // let pos = document.getElementById("screen").value;
+        // document.getElementById("screen").value = Math.abs();
+    }
+
+    function cal() {
+        let a = document.getElementById("screen").value;
+        let b = eval(a);
+        // Als het antwoord een decimaal getal bevat, dan rond je het antwoord altijd af op 2
+        // decimaal getal.
+        let c = b.toFixed(2);
+        document.getElementById("screen").value = c;
+    }
+    // De AC of C symbol reset jouw rekenmachine
+    function clearScreen() {
+        document.getElementById("screen").value = "";
+    }
+    //Wanneer een getal is ingevoerd dan verandert de tekst van AC naar C.
+    document.getElementById("ac").innerHTML = "AC";
+    //Wanneer een rekenkundig symbol (/, X, -, +, =) is geklikt, dan wordt de
+    //achtergrondkleur van dat symbool wit en wordt de tekst kleur oranje.
+    document.getElementById("symbol").style.backgroundColor = "white";
+    document.getElementById("screen").style.color = "orange";
+>>>>>>> master
 </script>
 </body>
 
