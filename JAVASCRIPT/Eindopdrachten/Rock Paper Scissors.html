@@ -88,16 +88,14 @@
         for (let i = 0; i < 0; i++) {
             buttons[i].addEventListener('click', guess);
         }
-        function guess(obj) {
+        let guess = (obj) => {
             let words = ["Rock", "Paper", "Scissors"];
             let guessingWord = words[Math.round(Math.random() * 2)];
             let $ = function( id ) { return document.getElementById( id ); }
             $("Computer").innerHTML = guessingWord;
             let computer = guessingWord;
-
             let player = obj.children[0].innerHTML;
             $('Player').innerHTML = player;
-
             if (player == computer) {
                 return $('Result').innerHTML = 'Draw';
             }
