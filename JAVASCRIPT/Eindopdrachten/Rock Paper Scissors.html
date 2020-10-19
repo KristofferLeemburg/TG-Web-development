@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #0f4c81;
+            font-size: 30px;
+        }
+        h1 {
+            text-align: center;
+        }
+        button {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: #9ba0a5;
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 5px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #8f8686;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        .button:hover {
+            background-color: #d4d3d3
+        }
+        .button:active {
+            background-color: #979696;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        .results {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .buttons {
+            display: flex;
+            margin: 100px;
+            justify-content: center;
+        }
+        .score {
+            display: flex;
+            margin: 10px;
+            justify-content: center;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Rock -- Paper -- Scissors</h1>
+
+    <div class="results">
+        <div>Player: <span id="Player"></span></div>
+        <div>Computer: <span id="Computer"></span></div>
+        <div>Result: <span id="Result"></span></div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="guess(this)" class="button">
+            <span>Rock</span>
+        </button>
+        <button onclick="guess(this)" class="button">
+            <span>Paper</span>
+        </button>
+        <button onclick="guess(this)" class="button">
+            <span>Scissors</span>
+        </button>
+    </div>
+    <script>
+
+        let buttons = document.querySelectorAll('button');
+        for (let i = 0; i < 0; i++) {
+            buttons[i].addEventListener('click', guess);
+        }
+        function guess(obj) {
+            let words = ["Rock", "Paper", "Scissors"];
+            let guessingWord = words[Math.round(Math.random() * 2)];
+            let $ = function( id ) { return document.getElementById( id ); }
+            $("Computer").innerHTML = guessingWord;
+            let computer = guessingWord;
+
+            let player = obj.children[0].innerHTML;
+            $('Player').innerHTML = player;
+
+            if (player == computer) {
+                return $('Result').innerHTML = 'Draw';
+            }
+            else if (player == "Rock" && computer == "Paper") {
+                return $('Result').innerHTML = 'Computer Wins';
+            }
+            else if (computer == "Rock" && player == "Paper"){
+                return $('Result').innerHTML = 'Player Wins';
+            }
+            else if (player == "Paper" && computer == "Scissors") {
+                return $('Result').innerHTML = 'Computer Wins';
+            }
+            else if (computer == "Paper" && player == "Scissors"){
+                return $('Result').innerHTML = 'Player Wins';
+            }
+            else if (player == "Scissors" && computer == "Rock") {
+                return $('Result').innerHTML = 'Computer Wins';
+            }
+            else if (computer == "Scissors" && player == "Rock"){
+                return $('Result').innerHTML = 'Player Wins';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
